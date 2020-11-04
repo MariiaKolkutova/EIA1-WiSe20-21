@@ -21,16 +21,6 @@ h1 {
     text-decoration: none;
     text-shadow: 2px 2px 2px grey;
 }
-a {
-  font-family: sans-serif;
-  color: white;
-  background-color: teal;
-  background-image: url();
-  background-size: contain;
-  text-decoration: none;
-  text-shadow: 2px 2px 2px grey;
-  box-shadow: 2px 2px 10px grey;
-}
 img {
   display: block;
   margin-left: auto;
