@@ -1,5 +1,8 @@
 body {
-    background-image: url("../Aufgabe3/taskmaterial3/bg.png");
+  background-image: url("../Aufgabe3/taskmaterial3/bg.png");
+}
+title {
+  color: blue;
 }
 body {
   background-image: url("../Aufgabe3/taskmaterial3/bg.png");
@@ -8,18 +11,18 @@ body {
   background-attachment: scroll;
 }
 head {
-    background-image: url("../Aufgabe3/taskmaterial3/bg.png");
+  background-image: url("../Aufgabe3/taskmaterial3/bg.png");
 }
 p {
-    background-image: url("../Aufgabe3/taskmaterial3/bg.png");  
+  background-image: url("../Aufgabe3/taskmaterial3/bg.png");  
 }
 h1 { 
-    color:white;
-    font-family: sans-serif;
-    font-style: italic;
-    font-weight: 500; 
-    text-decoration: none;
-    text-shadow: 2px 2px 2px grey;
+  color:red;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 500; 
+  text-decoration: none;
+  text-shadow: 2px 2px 2px grey;
 }
 img {
   display: block;
