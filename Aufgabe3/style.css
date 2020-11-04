@@ -1,8 +1,17 @@
 body {
+    background-image: url("../Aufgabe3/taskmaterial3/bg.png");
+}
+body {
   background-image: url("../Aufgabe3/taskmaterial3/bg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;
 }
 head {
     background-image: url("../Aufgabe3/taskmaterial3/bg.png");
+}
+p {
+    background-image: url("../Aufgabe3/taskmaterial3/bg.png");  
 }
 h1 { 
     color:white;
