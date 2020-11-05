@@ -5,7 +5,6 @@ body{
 }
 body{
   background-image: url("./bg.png");
-  
 }
 h1 { 
     color: rgb(211, 17, 17);
@@ -15,80 +14,130 @@ h1 {
     font-weight: 500; 
     text-shadow: 2px 2px 2px grey;
   }
-  h2, h3, h4 {
+h2, h3, h4 {
     color: rgb(138, 20, 20);
     font-family: sans-serif;
     font-size: 100%;
     font-style: italic;
     font-weight: 900; 
-  }
-
-a:link, a:hover, a:visited, a:active {
- float: right;
- overflow: hidden;
 }
 a:link {
+  background-color:black;
   color: white;
+  padding: 14px 25px;
+  text-align: center;
   text-decoration: none;
-  background-color: black;
+  display: inline-block;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 30%;
+  height: 5px;
 }
-a:visited {
+ a:active {
+  background-color:black;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 30%; 
+  height: 5px;
+}
+a:visited{
   color:red;
+  background-color:black;
+  padding: 14px 25px;
+  text-align: center;
   text-decoration: none;
-  background-color: black;
-}
-
+  display: inline-table;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 30%;
+  height: 5px;
+} 
 a:hover {
   color:violet;
-  text-decoration: none;
-  background-color: black;
-}
-a:active {
-  color: white;
-  text-decoration: none;
-  background-color: black;
-}
-a:link, a:active {
-  background-color:black;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-a:visited, a:hover {
   background-color:black;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: inline-table;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 30%; 
+  height: 5px;
+}
+.topnav {
+  background-color: black;
+  overflow: hidden;
 }
 img {
   display: block;
   border-radius: 8px;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 40%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-
 video {
   display: block;
   border-radius: 8px;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 40%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 input[type=text], select, textarea {
-  width: 30%;
+  width: 20%;
   padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
 }
-.container {
+.header-bottom {
+  padding: 14px 25px;
+  text-align: center;
+  display: outside;
+  overflow: hidden;
+  position: fixed;
+  top: auto;
+  width: 5%; 
+  height: 1px;
+}
+.container{
+  text-align: left;
+  bottom: -10cm;
+  color: #ccc;
+  left: 4cm;
   border-radius: 5px;
   padding: 20px;
+  position: relative;
+}
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+input[type="text"], textarea {
+  background-color : #b1b1b1; 
+}
+input[type="email"], textarea {
+  background-color : #b1b1b1; 
+}
+input[type="tel"], textarea {
+  background-color : #b1b1b1; 
 }
