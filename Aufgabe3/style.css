@@ -46,8 +46,8 @@ body{
 .facebooklogo img:hover {
    transform: scaleX(-1); 
   }
-.navbar :active {
-  color: violet;
+.navbar .active {
+  background-color: rgb(253, 0, 0);
 }
 .kreis{
   background-color: rgb(83, 16, 16);
@@ -55,8 +55,8 @@ body{
   height: 300px;
   margin: 0 auto;
   margin-top: 0px;
-  border-bottom-left-radius: 400px;
-  border-bottom-right-radius: 400px;
+  border-bottom-left-radius: 600px;
+  border-bottom-right-radius: 600px;
 }
 h1 { 
     color: white;
@@ -83,7 +83,7 @@ h2{
     width: 300px;
     border: 50px;
     margin: 500px;
-    margin-left: 140px;
+    margin-left: 150px;
     margin-top: -8px;
     margin-bottom: 0px;
     color:white;
@@ -96,12 +96,12 @@ h3, h4 {
     font-style: italic;
     font-weight: 900; 
 }
+
 img {
   display: block;
   border-radius: 8px;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -110,7 +110,6 @@ video {
   border-radius: 8px;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
