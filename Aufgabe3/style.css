@@ -6,6 +6,41 @@ body{
 body{
   background-image: url("./bg.png");
 }
+.header-bottom{
+  width: 2px !important;
+  height: 2px !important;
+  position: relative;
+  right: 35px;
+  bottom: -10cm;
+  background: transparent;
+  background: none;
+  left: 35px;
+}
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+
 h1 { 
     color: rgb(211, 17, 17);
     font-family: sans-serif;
@@ -14,68 +49,46 @@ h1 {
     font-weight: 500; 
     text-shadow: 2px 2px 2px grey;
   }
-h2, h3, h4 {
+h2{
+  color: rgb(211, 17, 17);
+  font-family: sans-serif;
+  font-size: 150%;
+  font-style: italic;
+  font-weight: 100; 
+  text-shadow: 2px 2px 2px grey;
+}
+#lorimps{
+    background-color: transparent;
+    font-family: sans-serif;
+    font-size: 100%;
+    font-style: italic;
+    width: 500px;
+    border: 50px ;
+    padding: 25px;
+    margin: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color:rgb(211, 17, 17);
+} 
+h3, h4 {
     color: rgb(138, 20, 20);
     font-family: sans-serif;
     font-size: 100%;
     font-style: italic;
     font-weight: 900; 
 }
-a:link {
-  background-color:black;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 30%;
-  height: 5px;
-}
- a:active {
-  background-color:black;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 30%; 
-  height: 5px;
-}
-a:visited{
-  color:red;
-  background-color:black;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-table;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 30%;
-  height: 5px;
-} 
-a:hover {
-  color:violet;
-  background-color:black;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-table;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 30%; 
-  height: 5px;
-}
-.topnav {
+
+#topvan{
   background-color: black;
   overflow: hidden;
+}
+#div4 {
+  width: 2%;
+  height: 3px;
+  background: transparent;
+  position: relative;
+  bottom: -10cm;
+  size: 2cm 2cm;
 }
 img {
   display: block;
@@ -140,4 +153,56 @@ input[type="email"], textarea {
 }
 input[type="tel"], textarea {
   background-color : #b1b1b1; 
+}
+a:link {
+  background-color:black;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 30%;
+  height: 5px;
+}
+ a:active {
+  background-color:black;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 30%; 
+  height: 5px;
+}
+a:visited{
+  color:red;
+  background-color:black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-table;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 30%;
+  height: 5px;
+} 
+a:hover {
+  color:violet;
+  background-color:black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-table;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 30%; 
+  height: 5px;
 }
