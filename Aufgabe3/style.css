@@ -11,6 +11,7 @@ body{
   position: fixed;
   right: 0;
   top: 0; 
+  margin-right: 20%;
 }
 .navbarnavigation {
   display: flex;
@@ -142,6 +143,7 @@ input[type=text], select, textarea {
   top: auto;
   width: 5%; 
   height: 1px;
+  background-color: grey;
 }
 .container{
   text-align: left;
@@ -187,4 +189,7 @@ input[type="tel"], textarea {
 }
 .aboutme li{
   list-style: none;
+}
+#absenden{
+  background-color: #b1b1b1;
 }
