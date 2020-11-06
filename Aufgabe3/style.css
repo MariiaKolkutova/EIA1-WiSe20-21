@@ -2,25 +2,26 @@
 body{
   text-align: center;
   font-family: sans-serif; 
-}
-body{
   background-image: url("./bg.png");
+  margin: 0 auto;
+  max-width: 800px;
 }
-.header-bottom{
-  width: 2px !important;
-  height: 2px !important;
-  position: relative;
-  right: 35px;
-  bottom: -10cm;
-  background: transparent;
-  background: none;
-  left: 35px;
-}
-#navbar {
-  overflow: hidden;
+.navbar {
   background-color: #333;
+  position: fixed;
+  right: 0;
+  top: 0; 
 }
-#navbar a {
+.navbarnavigation {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+.navbar li{
+  list-style: none;
+}
+.navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -28,29 +29,46 @@ body{
   padding: 14px;
   text-decoration: none;
 }
-.content {
-  padding: 16px;
+.navbar a:hover {
+  color: rgb(211, 17, 17);
+}
+.navbar a:active {
+  color: violet;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.facebooklogo img {
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+  width: 25px;
+  height: 25px;
 }
-.sticky + .content {
-  padding-top: 60px;
+.facebooklogo img:hover {
+   transform: scaleX(-1); 
+  }
+.navbar :active {
+  color: violet;
 }
-
+.kreis{
+  background-color: rgb(83, 16, 16);
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 0px;
+  border-bottom-left-radius: 400px;
+  border-bottom-right-radius: 400px;
+}
 h1 { 
-    color: rgb(211, 17, 17);
+    color: white;
     font-family: sans-serif;
     font-size: 400%;
     font-style: italic;
     font-weight: 500; 
     text-shadow: 2px 2px 2px grey;
+    margin: 0 auto;
   }
 h2{
-  color: rgb(211, 17, 17);
+  color:white;
   font-family: sans-serif;
   font-size: 150%;
   font-style: italic;
@@ -60,15 +78,16 @@ h2{
 #lorimps{
     background-color: transparent;
     font-family: sans-serif;
-    font-size: 100%;
+    font-size: 80%;
     font-style: italic;
-    width: 500px;
-    border: 50px ;
-    padding: 25px;
+    width: 300px;
+    border: 50px;
     margin: 500px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    color:rgb(211, 17, 17);
+    margin-left: 140px;
+    margin-top: -8px;
+    margin-bottom: 0px;
+    color:white;
+
 } 
 h3, h4 {
     color: rgb(138, 20, 20);
@@ -76,19 +95,6 @@ h3, h4 {
     font-size: 100%;
     font-style: italic;
     font-weight: 900; 
-}
-
-#topvan{
-  background-color: black;
-  overflow: hidden;
-}
-#div4 {
-  width: 2%;
-  height: 3px;
-  background: transparent;
-  position: relative;
-  bottom: -10cm;
-  size: 2cm 2cm;
 }
 img {
   display: block;
@@ -130,7 +136,7 @@ input[type=text], select, textarea {
 }
 .container{
   text-align: left;
-  bottom: -10cm;
+  bottom: -3cm;
   color: #ccc;
   left: 4cm;
   border-radius: 5px;
@@ -153,56 +159,4 @@ input[type="email"], textarea {
 }
 input[type="tel"], textarea {
   background-color : #b1b1b1; 
-}
-a:link {
-  background-color:black;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 30%;
-  height: 5px;
-}
- a:active {
-  background-color:black;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 30%; 
-  height: 5px;
-}
-a:visited{
-  color:red;
-  background-color:black;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-table;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 30%;
-  height: 5px;
-} 
-a:hover {
-  color:violet;
-  background-color:black;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-table;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 30%; 
-  height: 5px;
 }
