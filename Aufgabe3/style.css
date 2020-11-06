@@ -47,7 +47,7 @@ body{
    transform: scaleX(-1); 
   }
 .navbar .active {
-  background-color: rgb(253, 0, 0);
+  background-color: grey;
 }
 .kreis{
   background-color: rgb(83, 16, 16);
@@ -95,6 +95,16 @@ h3, h4 {
     font-size: 100%;
     font-style: italic;
     font-weight: 900; 
+}
+h5{
+  color: rgb(138, 20, 20);
+    font-family: sans-serif;
+    font-size: 200%;
+    font-style: italic;
+    font-weight: 900; 
+    text-shadow: 2px 2px 2px grey;
+    margin: 0 auto;
+    margin-left: 40px;
 }
 
 img {
@@ -170,10 +180,11 @@ input[type="tel"], textarea {
   width: 300px;
   border: 50px;
   margin: 500px;
-  margin-left: 140px;
-  margin-top: -8px;
-  margin-bottom: 0px;
+  margin-left: 130px;
+  margin-top: -5px;
+  margin-bottom: 10px;
   color: rgb(83, 16, 16);
-
-
+}
+.aboutme li{
+  list-style: none;
 }
