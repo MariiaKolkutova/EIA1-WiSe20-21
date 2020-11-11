@@ -1,7 +1,7 @@
 body{
     background-image: url("./bg.png");
   }
-  .wrapper{
+.wrapper{
     margin-left: 0.2cm;
     margin-top: 4.5cm;
 }
@@ -12,7 +12,7 @@ h1{
     font-size: 150%;
     font-style: oblique 40deg;
     margin-left: 520px;
-    margin-top: 115px;
+    margin-top: -300px;
 }
 #textt{
     color: white;
@@ -36,21 +36,48 @@ h1{
     margin-inline-start: 12cm;
     margin-inline-end: 10cm;
 }
-.div2{
-    border: 0cm;
-    margin: 0cm;
-    display: block;
-    margin-block-start: -13cm;
-    margin-block-end: 0cm;
-    margin-inline-start: -1.7cm;
-    margin-inline-end: 0cm;
+.stern4{
+    background-color: transparent;
+    position: absolute; 
+    width: 80px;
+    border: 0px;
+    margin: 500px;
+    margin-left: 520px;
+    margin-top: -10px;
+    margin-bottom: 0px;
 }
-.div3{
-    border: 0cm;
-    margin: 0cm;
-    display: block;
-    margin-block-start: -4.5cm;
-    margin-block-end: 0cm;
-    margin-inline-start: 12.5cm;
-    margin-inline-end: 10cm;
+
+.stern2{
+    background-color: transparent;
+    position: absolute;
+    width: 80px;
+    border: 0px;
+    margin: 500px;
+    margin-left: 900px;
+    margin-top: -11px;
+    margin-bottom: 0px;
+}
+.stern3{
+    background-color: transparent;
+    position: absolute;
+    width: 80px;
+    border: 0px;
+    margin: 500px;
+    margin-left: 800px;
+    margin-top: -20px;
+    margin-bottom: 0px;
+}
+.stern1{
+    background-color: transparent;
+    position: absolute; 
+    width: 80px;
+    border: 0px;
+    margin: 500px;
+    margin-left: 520px;
+    margin-top: -280px;
+    margin-bottom: 0px;
+}
+
+.sterne {
+    margin: 0%;
 }
