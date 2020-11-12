@@ -73,6 +73,7 @@ h2{
     margin-top: 100px;
     margin-bottom: 0px;
 }
-.sterne {
-    margin: 0%;
-}
+
+.stern1 :hover{
+    background: url("./stern_hover.png");
+  }
