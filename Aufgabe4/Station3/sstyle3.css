@@ -14,18 +14,14 @@ h1{
     margin-left: 520px;
     margin-top: -300px;
 }
-#textt{
+h2{
     color: white;
     background-color: transparent;
     font-family: sans-serif;
-    font-size: 100%;
+    font-size: 150%;
     font-style: oblique 40deg;
-    width: 300px;
-    border: 0px;
-    margin: 500px;
     margin-left: 520px;
-    margin-top: 50px;
-    margin-bottom: 0px;
+    margin-top: 0px;  
 }
 .div1{
     border: 0cm;
@@ -64,7 +60,7 @@ h1{
     border: 0px;
     margin: 500px;
     margin-left: 800px;
-    margin-top: -50px;
+    margin-top: 80px;
     margin-bottom: 0px;
 }
 .stern1{
@@ -73,11 +69,10 @@ h1{
     width: 80px;
     border: 0px;
     margin: 500px;
-    margin-left: 520px;
-    margin-top: -280px;
+    margin-left: 680px;
+    margin-top: 100px;
     margin-bottom: 0px;
 }
-
 .sterne {
     margin: 0%;
 }
