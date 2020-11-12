@@ -1,0 +1,36 @@
+body{
+    background-image: url("./bg.png");
+  }
+.wrapper{
+    margin-left: ;
+    margin-top: ;
+    position: relative;
+}
+
+.div1{
+    border: 0cm;
+    margin: 0cm;
+    display: block;
+    margin-block-start: 3cm;
+    margin-block-end: 0cm;
+    margin-inline-start: 12cm;
+    margin-inline-end: 10cm;
+}
+.div2{
+    border: 0cm;
+    margin: 0cm;
+    display: block;
+    margin-block-start: ;
+    margin-block-end: 0cm;
+    margin-inline-start: ;
+    margin-inline-end: 0cm;
+}
+.div3{
+    border: 0cm;
+    margin: 0cm;
+    display: block;
+    margin-block-start: ;
+    margin-block-end: 0cm;
+    margin-inline-start: ;
+    margin-inline-end: ;
+}
