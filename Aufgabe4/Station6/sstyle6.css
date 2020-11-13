@@ -22,36 +22,21 @@ a{
 }
 .alleckig{
     color: white;
-    column-count: 2;
-    column-gap: 7cm;
     position: absolute;
     margin-inline-start: 13cm;
-    column-rule-width: 15px;
     margin-top: -8cm;
+    display: flex;
+    flex-direction: row;
 }
 .allherz{
     color: white;
-    column-count: 3;
-    column-gap: 5cm;
     width: 10cm;
     position: relative;
     margin: -8cm;
     margin-inline-start: 14cm;
     margin-top: -7cm;
-}
-.eckig1{
-    color: white;
-    margin: auto;
-    width: 500px;
-    display: grid;
-    position: absolute;
-}
-.eckig2{
-    color: white;
-    margin: auto;
-    width: 500px;
-    display: grid;
-    position: absolute;
+    display: flex;
+    flex-direction: row;
 }
 .div2{
     border: 0cm;
