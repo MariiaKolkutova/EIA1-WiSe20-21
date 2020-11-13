@@ -16,7 +16,20 @@ h1{
     margin-left: 500px;
     margin-top: -360px;
 }
-
+.eckig1{
+    color: white;
+    margin: auto;
+    width: 500px;
+    display: grid;
+    position: absolute;
+}
+.eckig2{
+    color: white;
+    margin: auto;
+    width: 500px;
+    display: grid;
+    position: absolute;
+}
 .div2{
     border: 0cm;
     margin: 0cm;
