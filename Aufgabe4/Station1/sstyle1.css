@@ -1,19 +1,6 @@
 
-html{
-    height: 800px;
-    width: 800px;
-    margin: 0%;
-}
 body {
     background-image: url("./bg.png");
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 800px;
-    width: 800px;
-    left: 800px;
-    right: 0cm;
-    margin: 0%;
 }
 h1{
     color: white;
@@ -22,11 +9,16 @@ h1{
     font-size: 150%;
     font-style: oblique 40deg;
 }
-.wrapperbg{
+.wrapper{
     display: block;
     position: absolute;
     align-items: center;
     justify-content: center;
+    left: 30%;
+    top: 30%;
+}
+h2{
+    font-size: 80%;
 }
 #textt{
     color: white;
@@ -37,22 +29,21 @@ h1{
     width: 300px;
     border: 0px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: 0;
+    top: 12%;
+    left: 22%;
     text-align: center;
-}
-.div1{
-    position: relative;
-    display: block;
 }
 .div2{
     display: block;
     position: relative;
+    top: -660px;
+    left: -50px;
 }
 .div3{
     display: block;
     position: relative;
+    top: -170px;
+    left: 460px;
 }
 img {
     position: relative;
