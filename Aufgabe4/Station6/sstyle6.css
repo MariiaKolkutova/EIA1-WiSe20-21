@@ -2,9 +2,12 @@ body{
     background-image: url("./bg.png");
   }
 .wrapper{
-    margin-left: 0cm;
-    margin-top: 0cm;
-    position: relative;
+    display: block;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: 10%;
+    top: 30%;
 }
 h1{
     color: white;
@@ -22,29 +25,27 @@ a{
 }
 .alleckig{
     color: white;
-    position: absolute;
+    position: relative;
     margin-inline-start: 13cm;
+    margin-inline-end: 14cm;
     margin-top: -8cm;
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    column-count: 2;
 }
 .allherz{
     color: white;
     width: 10cm;
     position: relative;
     margin: -8cm;
-    margin-inline-start: 14cm;
-    margin-top: -7cm;
+    margin-inline-start: 13cm;
+    margin-top: 0.5cm;
     display: flex;
     flex-direction: row;
 }
 .div2{
     border: 0cm;
-    margin: 0cm;
     display: block;
     position: relative;
-    margin-block-start: 4cm;
-    margin-block-end: 0cm;
-    margin-inline-start: 12cm;
-    margin-inline-end: 0cm;
+    left: 30%;
+    top: 10%;
 }
