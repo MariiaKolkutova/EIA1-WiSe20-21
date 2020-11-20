@@ -10,5 +10,5 @@ var asia2008 = 12954.7;
 var asia2018 = 16274.1;
 var australia2008 = 1993;
 var australia2018 = 2100.5;
-var emissionInsgesamt2018 = africa2018 + southAmerica2018 + europe2018 + northAmerica2018 + asia2018 + australia2018;
+var emissionInsgesamt2018 = (africa2018 + southAmerica2018 + europe2018 + northAmerica2018 + asia2018 + australia2018);
 //# sourceMappingURL=script.js.map

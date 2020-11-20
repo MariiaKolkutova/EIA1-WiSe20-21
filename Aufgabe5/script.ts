@@ -16,4 +16,4 @@ var asia2018: number = 16274.1;
 var australia2008: number = 1993;
 var australia2018: number = 2100.5;
 
-var emissionInsgesamt2018: number = africa2018 + southAmerica2018 + europe2018 + northAmerica2018 + asia2018 + australia2018
+var emissionInsgesamt2018: number = (africa2018 + southAmerica2018 + europe2018 + northAmerica2018 + asia2018 + australia2018);
