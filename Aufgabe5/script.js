@@ -1,3 +1,4 @@
+console.log("Worldwide Emission");
 var africa2008 = 1028;
 var africa2018 = 1235.5;
 var southAmerica2008 = 1132.6;
