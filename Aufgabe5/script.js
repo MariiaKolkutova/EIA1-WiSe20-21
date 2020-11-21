@@ -1,5 +1,5 @@
-//Emission aller Kontinente 2008 & 2018
 console.log("-Worldwide Emission-");
+//Emission aller Kontinente 2008 & 2018
 var africa2008 = 1028;
 var africa2018 = 1235.5;
 var southAmerica2008 = 1132.6;
