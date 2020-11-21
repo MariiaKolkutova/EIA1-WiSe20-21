@@ -57,12 +57,12 @@ var ZverglCO2eAsia : number = (asia2018 - asia2008);
 var ZverglCO2eAustralia : number = (australia2018 - australia2008);
 
 // (Prozent) Kontinent Vergleich "world carbon dioxide emission" 2008 und 2018 
-var PverglCO2eAfrica : number = (((africa2018 - africa2008) -1) * 100);
-var PverglCO2eNorthAmerica : number = (((northAmerica2018 - northAmerica2008) -1) * 100);
-var PverglCO2eSouthAmerica : number = (((southAmerica2018 - southAmerica2008) -1) * 100);
-var PverglCO2eEurope : number = (((europe2018 - europe2008) -1) * 100);
-var PverglCO2eAsia : number = (((asia2018 - asia2008) -1) * 100);
-var PverglCO2eAustralia : number = (((australia2018 - australia2008) -1) * 100);
+var PverglCO2eAfrica : number = (((africa2018 / africa2008) -1) * 100);
+var PverglCO2eNorthAmerica : number = (((northAmerica2018 / northAmerica2008) -1) * 100);
+var PverglCO2eSouthAmerica : number = (((southAmerica2018 / southAmerica2008) -1) * 100);
+var PverglCO2eEurope : number = (((europe2018 / europe2008) -1) * 100);
+var PverglCO2eAsia : number = (((asia2018 / asia2008) -1) * 100);
+var PverglCO2eAustralia : number = (((australia2018 / australia2008) -1) * 100);
 
 
 //Konsolenausgabe
