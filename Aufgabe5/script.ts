@@ -112,10 +112,12 @@ console.log("Relativ zur Gesamtemission der Welt verursacht Südamerika damit 20
 console.log("Für Südamerika hat sich 2018 im Vergleich zu 2008 die Emission um" + PverglCO2eSouthAmerica.toFixed(2) + "%" + "verändert")
 console.log("2018 im Vergleich zu 2008 sind das" + ZverglCO2eSouthAmerica.toFixed(2) + "kg CO2")
 //NorthAmerica
-console.log("Die Emission von Nordamerika ist: kg CO2")
-console.log("Die Emission von Nordamerika, im Jahr 2018, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2018, beträgt xx%")
-console.log("Die Emission von Nordamerika, im Jahr 2008, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2008, beträgt xx%")
-console.log("Relativ zur Gesamtemission der Welt verursacht Nordamerika damit XX%")
-console.log("Für Nordamerika hat sich 2018 im Vergleich zu 2008 die Emission um XX% verändert")
-console.log("2018 im Vergleich zu 2008 sind das XXXX kg CO2")
+console.log("Die Emission von Nordamerika im Jahr 2018 ist:"+ northAmerica2018.toFixed(2) +"kg CO2")
+console.log("Die Emission von Nordamerika im Jahr 2008 ist:" + northAmerica2008.toFixed(2) + "kg CO2")
+console.log("Die Emission von Nordamerika 2008+2018 ist insgesamt:" + northAmerica2008.toFixed(2) + northAmerica2018.toFixed(2) + "kg CO2")
+console.log("Die Emission von Nordamerika, im Jahr 2018, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2018, beträgt" + prozentanteilNorthAmerica18.toFixed(2) + "%")
+console.log("Die Emission von Nordamerika, im Jahr 2008, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2008, beträgt" + prozentanteilNorthAmerica08.toFixed(2) + "%")
+console.log("Relativ zur Gesamtemission der Welt verursacht Nordamerika damit 2008"+  prozentanteilNorthAmerica08.toFixed(2) +"kg CO2")
+console.log("Für Nordamerika hat sich 2018 im Vergleich zu 2008 die Emission um" + PverglCO2eNorthAmerica.toFixed(2) + "%" + "verändert")
+console.log("2018 im Vergleich zu 2008 sind das" + ZverglCO2eNorthAmerica.toFixed(2) + "kg CO2")
 
