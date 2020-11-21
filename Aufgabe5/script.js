@@ -17,5 +17,5 @@ var emissionInsgesamt2018 = (africa2018 + southAmerica2018 + europe2018 + northA
 //Gesamtemission aller Kontinete 2008
 var emissionInsgesamt2008 = (africa2008 + southAmerica2008 + europe2008 + northAmerica2008 + asia2008 + australia2008);
 //Africa
-console.log("Die Emission von Africa ist:' kg CO2");
+console.log("Die Emission von Africa ist: kg CO2");
 //# sourceMappingURL=script.js.map
