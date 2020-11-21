@@ -38,26 +38,26 @@ var prozentveraenderungEurope = (((prozentanteilEurope18 / prozentanteilEurope08
 var prozentveraenderungAsia = (((prozentanteilAsia18 / prozentanteilAsia08) - 1) * 100);
 var prozentveraenderungAustralia = (((prozentanteilAustralia18 / prozentanteilAustralia08) - 1) * 100);
 // (Zahlen) Vergleich "world carbon dioxide emission" 2008 und 2018 
-var verglCO2eAfrica = (africa2018 - africa2008);
-var verglCO2eNorthAmerica = (northAmerica2018 - northAmerica2008);
-var verglCO2eSouthAmerica = (southAmerica2018 - southAmerica2008);
-var verglCO2eEurope = (europe2018 - europe2008);
-var verglCO2eAsia = (asia2018 - asia2008);
-var verglCO2eAustralia = (australia2018 - australia2008);
+var verglCO2eAfricaZ = (africa2018 - africa2008);
+var verglCO2eNorthAmericaZ = (northAmerica2018 - northAmerica2008);
+var verglCO2eSouthAmericaZ = (southAmerica2018 - southAmerica2008);
+var verglCO2eEuropeZ = (europe2018 - europe2008);
+var verglCO2eAsiaZ = (asia2018 - asia2008);
+var verglCO2eAustraliaZ = (australia2018 - australia2008);
 // (Prozent) Vergleich "world carbon dioxide emission" 2008 und 2018 
-var verglCO2eAfrica = (((africa2018 - africa2008) - 1) * 100);
-var verglCO2eNorthAmerica = (((northAmerica2018 - northAmerica2008) - 1) * 100);
-var verglCO2eSouthAmerica = (((southAmerica2018 - southAmerica2008) - 1) * 100);
-var verglCO2eEurope = (((europe2018 - europe2008) - 1) * 100);
-var verglCO2eAsia = (((asia2018 - asia2008) - 1) * 100);
-var verglCO2eAustralia = (((australia2018 - australia2008) - 1) * 100);
+var verglCO2eAfricaP = (((africa2018 - africa2008) - 1) * 100);
+var verglCO2eNorthAmericaP = (((northAmerica2018 - northAmerica2008) - 1) * 100);
+var verglCO2eSouthAmericaP = (((southAmerica2018 - southAmerica2008) - 1) * 100);
+var verglCO2eEuropeP = (((europe2018 - europe2008) - 1) * 100);
+var verglCO2eAsiaP = (((asia2018 - asia2008) - 1) * 100);
+var verglCO2eAustraliaP = (((australia2018 - australia2008) - 1) * 100);
 //Konsolenausgabe
 //Europe
 console.log("Die Emission von Europa im Jahr 2018 ist:" + europe2018.toFixed(2) + "kg CO2");
 console.log("Die Emission von Europa, im Jahr 2018, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2018, beträgt" + prozentanteilEurope18.toFixed(2) + "%");
 console.log("Die Emission von Europa, im Jahr 2008, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2008, beträgt" + prozentanteilEurope08.toFixed(2) + "%");
-console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit XX%");
-console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um XX% verändert");
+console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit" + +"XX%");
+console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um" + verglCO2eEuropeP + "%" + "verändert");
 console.log("2018 im Vergleich zu 2008 sind das XXXX kg CO2");
 //Asia
 console.log("Die Emission von Asien ist: kg CO2");

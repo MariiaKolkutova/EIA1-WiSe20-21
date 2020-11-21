@@ -49,20 +49,20 @@ var prozentveraenderungAsia : number = (((prozentanteilAsia18/ prozentanteilAsia
 var prozentveraenderungAustralia: number = (((prozentanteilAustralia18/ prozentanteilAustralia08) -1) * 100);
 
 // (Zahlen) Vergleich "world carbon dioxide emission" 2008 und 2018 
-var verglCO2eAfrica : number = (africa2018 - africa2008);
-var verglCO2eNorthAmerica : number = (northAmerica2018 - northAmerica2008);
-var verglCO2eSouthAmerica : number = (southAmerica2018 - southAmerica2008);
-var verglCO2eEurope : number = (europe2018 - europe2008);
-var verglCO2eAsia : number = (asia2018 - asia2008);
-var verglCO2eAustralia : number = (australia2018 - australia2008);
+var verglCO2eAfricaZ : number = (africa2018 - africa2008);
+var verglCO2eNorthAmericaZ : number = (northAmerica2018 - northAmerica2008);
+var verglCO2eSouthAmericaZ : number = (southAmerica2018 - southAmerica2008);
+var verglCO2eEuropeZ : number = (europe2018 - europe2008);
+var verglCO2eAsiaZ : number = (asia2018 - asia2008);
+var verglCO2eAustraliaZ : number = (australia2018 - australia2008);
 
 // (Prozent) Vergleich "world carbon dioxide emission" 2008 und 2018 
-var verglCO2eAfrica : number = (((africa2018 - africa2008)-1)*100);
-var verglCO2eNorthAmerica : number = (((northAmerica2018 - northAmerica2008)-1)*100);
-var verglCO2eSouthAmerica : number = (((southAmerica2018 - southAmerica2008)-1)*100);
-var verglCO2eEurope : number = (((europe2018 - europe2008)-1)*100);
-var verglCO2eAsia : number = (((asia2018 - asia2008)-1)*100);
-var verglCO2eAustralia : number = (((australia2018 - australia2008)-1)*100);
+var verglCO2eAfricaP : number = (((africa2018 - africa2008) -1) *100);
+var verglCO2eNorthAmericaP : number = (((northAmerica2018 - northAmerica2008) -1) *100);
+var verglCO2eSouthAmericaP : number = (((southAmerica2018 - southAmerica2008) -1) *100);
+var verglCO2eEuropeP : number = (((europe2018 - europe2008) -1) *100);
+var verglCO2eAsiaP : number = (((asia2018 - asia2008) -1) *100);
+var verglCO2eAustraliaP : number = (((australia2018 - australia2008) -1) *100);
 
 
 //Konsolenausgabe
@@ -71,8 +71,8 @@ var verglCO2eAustralia : number = (((australia2018 - australia2008)-1)*100);
 console.log("Die Emission von Europa im Jahr 2018 ist:" + europe2018.toFixed(2) + "kg CO2")
 console.log("Die Emission von Europa, im Jahr 2018, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2018, beträgt" + prozentanteilEurope18.toFixed(2) +"%")
 console.log("Die Emission von Europa, im Jahr 2008, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2008, beträgt" + prozentanteilEurope08.toFixed(2) + "%")
-console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit XX%")
-console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um XX% verändert")
+console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit" + +"XX%")
+console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um"+ verglCO2eEuropeP + "%" + "verändert")
 console.log("2018 im Vergleich zu 2008 sind das XXXX kg CO2")
 //Asia
 console.log("Die Emission von Asien ist: kg CO2")
