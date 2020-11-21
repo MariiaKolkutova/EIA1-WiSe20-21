@@ -40,7 +40,7 @@ var prozentanteilEurope08 : number = ((europe2008 / emissionInsgesamt2008) * 100
 var prozentanteilAsia08 : number = ((asia2008 / emissionInsgesamt2008) * 100);
 var prozentanteilAustralia08 : number = ((australia2008 / emissionInsgesamt2008) * 100);
 
-//Veränderung der Prozentanteile der Gesamtemission aller Kontinente 2008 & 2018
+// Prozentuale veränderung der Gesamtemission aller Kontinente 2008 & 2018
 var prozentveraenderungAfrica : number = (((prozentanteilAfrica18/ prozentanteilAfrica08) -1) * 100);
 var prozentveraenderungSouthAmerica : number = (((prozentanteilSouthAmerica18/ prozentanteilSouthAmerica08) -1) * 100);
 var prozentveraenderungNorthAmerica : number = (((prozentanteilNorthAmerica18/ prozentanteilNorthAmerica08) -1) * 100);
@@ -67,15 +67,46 @@ var verglCO2eAustralia : number = (((australia2018 - australia2008)-1)*100);
 
 //Konsolenausgabe
 
-//Africa
-console.log("Die Emission von Africa ist: kg CO2")
-//SouthAmerica
-console.log("Die Emission von Südamerika ist: kg CO2")
 //Europe
 console.log("Die Emission von Europa ist: kg CO2")
-//NorthAmerica
-console.log("Die Emission von Nordamerika ist: kg CO2")
+console.log("Die Emission von Europa, im Jahr 2018, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2018, beträgt xx%")
+console.log("Die Emission von Europa, im Jahr 2008, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2008, beträgt xx%")
+console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit XX%")
+console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um XX% verändert")
+console.log("2018 im Vergleich zu 2008 sind das XXXX kg CO2")
 //Asia
 console.log("Die Emission von Asien ist: kg CO2")
+console.log("Die Emission von Asien, im Jahr 2018, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2018, beträgt xx%")
+console.log("Die Emission von Asien, im Jahr 2008, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2008, beträgt xx%")
+console.log("Relativ zur Gesamtemission der Welt verursacht Asien damit XX%")
+console.log("Für Asien hat sich 2018 im Vergleich zu 2008 die Emission um XX% verändert")
+console.log("2018 im Vergleich zu 2008 sind das XXXX kg CO2")
 //Australia
 console.log("Die Emission von Australien ist: kg CO2")
+console.log("Die Emission von Australien, im Jahr 2018, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2018, beträgt xx%")
+console.log("Die Emission von Aistralien, im Jahr 2008, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2008, beträgt xx%")
+console.log("Relativ zur Gesamtemission der Welt verursacht Aistralien damit XX%")
+console.log("Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um XX% verändert")
+console.log("2018 im Vergleich zu 2008 sind das XXXX kg CO2")
+//Africa
+console.log("Die Emission von Afrika ist: kg CO2")
+console.log("Die Emission von Afrika, im Jahr 2018, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2018, beträgt xx%")
+console.log("Die Emission von Afrika, im Jahr 2008, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2008, beträgt xx%")
+console.log("Relativ zur Gesamtemission der Welt verursacht Afrika damit XX%")
+console.log("Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um XX% verändert")
+console.log("2018 im Vergleich zu 2008 sind das XXXX kg CO2")
+//SouthAmerica
+console.log("Die Emission von Südamerika ist: kg CO2")
+console.log("Die Emission von Südamerika, im Jahr 2018, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2018, beträgt xx%")
+console.log("Die Emission von Südamerika, im Jahr 2008, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2008, beträgt xx%")
+console.log("Relativ zur Gesamtemission der Welt verursacht Südamerika damit XX%")
+console.log("Für Südamerika hat sich 2018 im Vergleich zu 2008 die Emission um XX% verändert")
+console.log("2018 im Vergleich zu 2008 sind das XXXX kg CO2")
+//NorthAmerica
+console.log("Die Emission von Nordamerika ist: kg CO2")
+console.log("Die Emission von Nordamerika, im Jahr 2018, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2018, beträgt xx%")
+console.log("Die Emission von Nordamerika, im Jahr 2008, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2008, beträgt xx%")
+console.log("Relativ zur Gesamtemission der Welt verursacht Nordamerika damit XX%")
+console.log("Für Nordamerika hat sich 2018 im Vergleich zu 2008 die Emission um XX% verändert")
+console.log("2018 im Vergleich zu 2008 sind das XXXX kg CO2")
+
