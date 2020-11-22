@@ -61,7 +61,7 @@ console.log("Die Emission von Europa, im Jahr 2018, im Vergleich zu der Gesamtem
 console.log("Dennoch beträgt die Emission von Europa, im Jahr 2008, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2008: " + prozentanteilEurope08.toFixed(2) + "%");
 console.log("Relativ zur Gesamtemission der Welt verursacht Europa damit 2008: " + prozentanteilEurope08.toFixed(2) + "%");
 console.log("Dabei relativ zur Gesamtemission der Welt verursacht Europa damit 2018: " + prozentanteilEurope18.toFixed(2) + "%");
-console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um '" + PverglCO2eEurope.toFixed(2) + "%" + "'verändert");
+console.log("Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um '" + PverglCO2eEurope.toFixed(2) + "%" + "' verändert");
 console.log("Letztendlich 2018, im Vergleich zu 2008, sind das: " + ZverglCO2eEurope.toFixed(2) + "kg CO2");
 //Asia
 console.log("-Asien-");
@@ -72,7 +72,7 @@ console.log("Die Emission von Asien, im Jahr 2018, im Vergleich zu der Gesamtemi
 console.log("Dennoch beträgt die Emission von Asien, im Jahr 2008, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2008: " + prozentanteilAsia08.toFixed(2) + "%");
 console.log("Relativ zur Gesamtemission der Welt verursacht Asien damit 2008: " + prozentanteilAsia08.toFixed(2) + "%");
 console.log("Dabei relativ zur Gesamtemission der Welt verursacht Asien damit 2018: " + prozentanteilAsia18.toFixed(2) + "%");
-console.log("Für Asien hat sich 2018 im Vergleich zu 2008 die Emission um '" + PverglCO2eAsia.toFixed(2) + "%" + "'verändert");
+console.log("Für Asien hat sich 2018 im Vergleich zu 2008 die Emission um '" + PverglCO2eAsia.toFixed(2) + "%" + "' verändert");
 console.log("Letztendlich 2018, im Vergleich zu 2008, sind das: " + ZverglCO2eAsia.toFixed(2) + "kg CO2");
 //Australia
 console.log("-Australien-");
@@ -83,7 +83,7 @@ console.log("Die Emission von Australien, im Jahr 2018, im Vergleich zu der Gesa
 console.log("Dennoch beträgt die Emission von Australien, im Jahr 2008, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2008: " + prozentanteilAustralia08.toFixed(2) + "%");
 console.log("Relativ zur Gesamtemission der Welt verursacht Australien damit 2008: " + prozentanteilAustralia08.toFixed(2) + "%");
 console.log("Dabei relativ zur Gesamtemission der Welt verursacht Australien damit 2018: " + prozentanteilAustralia18.toFixed(2) + "%");
-console.log("Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um '" + PverglCO2eAustralia.toFixed(2) + "%" + "'verändert");
+console.log("Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um '" + PverglCO2eAustralia.toFixed(2) + "%" + "' verändert");
 console.log("Letztendlich 2018, im Vergleich zu 2008, sind das: " + ZverglCO2eAustralia.toFixed(2) + "kg CO2");
 //Africa
 console.log("-Afrika-");
@@ -94,7 +94,7 @@ console.log("Die Emission von Afrika, im Jahr 2018, im Vergleich zu der Gesamtem
 console.log("Dennoch beträgt die Emission von Afrika, im Jahr 2008, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2008: " + prozentanteilAfrica08.toFixed(2) + "%");
 console.log("Relativ zur Gesamtemission der Welt verursacht Afrika damit 2008: " + prozentanteilAfrica08.toFixed(2) + "%");
 console.log("Dabei relativ zur Gesamtemission der Welt verursacht Afrika damit 2018: " + prozentanteilAfrica18.toFixed(2) + "%");
-console.log("Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um '" + PverglCO2eAfrica.toFixed(2) + "%" + "'verändert");
+console.log("Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um '" + PverglCO2eAfrica.toFixed(2) + "%" + "' verändert");
 console.log("Letztendlich 2018, im Vergleich zu 2008, sind das: " + ZverglCO2eAfrica.toFixed(2) + "kg CO2");
 //SouthAmerica
 console.log("-Südamerika-");
@@ -105,7 +105,7 @@ console.log("Die Emission von Südamerika, im Jahr 2018, im Vergleich zu der Ges
 console.log("Dennoch beträgt die Emission von Südamerika, im Jahr 2008, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2008: " + prozentanteilSouthAmerica08.toFixed(2) + "%");
 console.log("Relativ zur Gesamtemission der Welt verursacht Südamerika damit 2008: " + prozentanteilSouthAmerica08.toFixed(2) + "%");
 console.log("Dabei relativ zur Gesamtemission der Welt verursacht Südamerika damit 2018: " + prozentanteilSouthAmerica18.toFixed(2) + "%");
-console.log("Für Südamerika hat sich 2018 im Vergleich zu 2008 die Emission um '" + PverglCO2eSouthAmerica.toFixed(2) + "%" + "'verändert");
+console.log("Für Südamerika hat sich 2018 im Vergleich zu 2008 die Emission um '" + PverglCO2eSouthAmerica.toFixed(2) + "%" + "' verändert");
 console.log("Letztendlich 2018, im Vergleich zu 2008, sind das: " + ZverglCO2eSouthAmerica.toFixed(2) + "kg CO2");
 //NorthAmerica
 console.log("-Nordamerika-");
@@ -116,6 +116,6 @@ console.log("Die Emission von Nordamerika, im Jahr 2018, im Vergleich zu der Ges
 console.log("Dennoch beträgt die Emission von Nordamerika, im Jahr 2008, im Vergleich zu der Gesamtemission aller Kontinente, im Jahr 2008: " + prozentanteilNorthAmerica08.toFixed(2) + "%");
 console.log("Relativ zur Gesamtemission der Welt verursacht Nordamerika damit 2008: " + prozentanteilNorthAmerica08.toFixed(2) + "%");
 console.log("Dabei relativ zur Gesamtemission der Welt verursacht Nordamerika damit 2018: " + prozentanteilNorthAmerica18.toFixed(2) + "%");
-console.log("Für Nordamerika hat sich 2018 im Vergleich zu 2008 die Emission um '" + PverglCO2eNorthAmerica.toFixed(2) + "%" + "'verändert");
+console.log("Für Nordamerika hat sich 2018 im Vergleich zu 2008 die Emission um '" + PverglCO2eNorthAmerica.toFixed(2) + "%" + "' verändert");
 console.log("Letztendlich 2018, im Vergleich zu 2008, sind das: " + ZverglCO2eNorthAmerica.toFixed(2) + "kg CO2");
 //# sourceMappingURL=script.js.map
