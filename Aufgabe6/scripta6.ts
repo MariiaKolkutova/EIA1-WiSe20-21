@@ -75,6 +75,7 @@ function FunktionKontinentBerechnung(continent: string, continent2018: number, c
     document.querySelector("#emissionRelativeWorld").innerHTML = (( emissionInsgesamt2018 / europe2018 ) / 100 ).toFixed(2) + "%";
     document.querySelector("#growthEmission08and18").innerHTML = (((continent2018 / continent2008 ) -1) * 100).toFixed(2) + "%";
     document.querySelector("#growthEmissionAbsolute").innerHTML = (continent2018 - continent2008 ).toFixed(2) + "kg CO2";
+    document.querySelector('.chart').setAttribute('style', 'height:' + (100 / (emissionInsgesamt2018 / continent2018)).toFixed(2) + "%" );
 };
 
 //EventListener
@@ -106,7 +107,6 @@ document.querySelector(".asia").addEventListener("click", function(){
 document.querySelector(".australia").addEventListener("click", function(){
     FunktionKontinentBerechnung("Australia", australia2008, australia2018)
 });
-
 
 
 };
