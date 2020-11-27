@@ -72,7 +72,7 @@ function FunktionKontinentBerechnung(continent: string, continent2018: number, c
     document.querySelector("#titleRegion").innerHTML = continent;
     document.querySelector("#continentX").innerHTML = continent;
     document.querySelector("#emissionAbsolute2018").innerHTML = continent2018.toFixed(1) + "kg CO2";
-    document.querySelector("#emissionRelativeWorld").innerHTML = (( emissionInsgesamt2018 / continent2018 ) / 100 ).toFixed(1) + "%";
+    document.querySelector("#emissionRelativeWorld").innerHTML = (100 / ( emissionInsgesamt2018 / continent2018 )).toFixed(1) + "%";
     document.querySelector("#growthEmission08and18").innerHTML = (((continent2018 / continent2008 ) -1) * 100).toFixed(1) + "%";
     document.querySelector("#growthEmissionAbsolute").innerHTML = (continent2018 - continent2008 ).toFixed(1) + "kg CO2";
     document.querySelector('.chart').setAttribute('style', 'height:' + (100 / (emissionInsgesamt2018 / continent2008)).toFixed(1) + "%" );
@@ -82,22 +82,22 @@ function FunktionKontinentBerechnung(continent: string, continent2018: number, c
 
 //Europe
 document.querySelector(".europe").addEventListener("click", function(){
-    FunktionKontinentBerechnung("Europe", europe2018, europe2008)
+    FunktionKontinentBerechnung("Europe", europe2008, europe2018)
 });
  
 //Northamerica
 document.querySelector(".northamerica").addEventListener("click", function(){
-    FunktionKontinentBerechnung("Northamerica", northAmerica2008, northAmerica2008)
+    FunktionKontinentBerechnung("Northamerica", northAmerica2008, northAmerica2018)
 });
  
 //Southamerica
 document.querySelector(".southamerica").addEventListener("click", function(){
-    FunktionKontinentBerechnung("Southamerica", southAmerica2008, southAmerica2008)
+    FunktionKontinentBerechnung("Southamerica", southAmerica2008, southAmerica2018)
 });
  
 //Africa
 document.querySelector(".africa").addEventListener("click", function(){
-    FunktionKontinentBerechnung("Africa", africa2008, africa2008)
+    FunktionKontinentBerechnung("Africa", africa2008, africa2018)
 });
 //Asia
 document.querySelector(".asia").addEventListener("click", function(){
