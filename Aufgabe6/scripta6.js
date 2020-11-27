@@ -57,10 +57,10 @@ var aufgabe6;
     function FunktionKontinentBerechnung(continent, continent2018, continent2008) {
         document.querySelector("#titleRegion").innerHTML = continent;
         document.querySelector("#continentX").innerHTML = continent;
-        document.querySelector("#emissionAbsolute2018").innerHTML = continent2018.toFixed(2) + "kg CO2";
+        document.querySelector("#emissionAbsolute2018").innerHTML = continent2018.toFixed(2) + " CO2" + " kg";
         document.querySelector("#emissionRelativeWorld").innerHTML = (100 / (emissionInsgesamt2018 / continent2018)).toFixed(2) + "%";
         document.querySelector("#growthEmission08and18").innerHTML = (((continent2018 / continent2008) - 1) * 100).toFixed(2) + "%";
-        document.querySelector("#growthEmissionAbsolute").innerHTML = (continent2018 - continent2008).toFixed(2) + "kg CO2";
+        document.querySelector("#growthEmissionAbsolute").innerHTML = (continent2018 - continent2008).toFixed(2) + " CO2" + " kg";
         document.querySelector('.chart').setAttribute('style', 'height:' + (100 / (emissionInsgesamt2018 / continent2008)).toFixed(2) + "%");
     }
     ;
