@@ -57,37 +57,37 @@ var aufgabe6;
     function FunktionKontinentBerechnung(continent, continent2018, continent2008) {
         document.querySelector("#titleRegion").innerHTML = continent;
         document.querySelector("#continentX").innerHTML = continent;
-        document.querySelector("#emissionAbsolute2018").innerHTML = continent2018.toFixed(1) + "kg CO2";
-        document.querySelector("#emissionRelativeWorld").innerHTML = (100 / (emissionInsgesamt2018 / continent2018)).toFixed(1) + "%";
-        document.querySelector("#growthEmission08and18").innerHTML = (((continent2018 / continent2008) - 1) * 100).toFixed(1) + "%";
-        document.querySelector("#growthEmissionAbsolute").innerHTML = (continent2018 - continent2008).toFixed(1) + "kg CO2";
-        document.querySelector('.chart').setAttribute('style', 'height:' + (100 / (emissionInsgesamt2018 / continent2008)).toFixed(1) + "%");
+        document.querySelector("#emissionAbsolute2018").innerHTML = continent2018.toFixed(2) + "kg CO2";
+        document.querySelector("#emissionRelativeWorld").innerHTML = (100 / (emissionInsgesamt2018 / continent2018)).toFixed(2) + "%";
+        document.querySelector("#growthEmission08and18").innerHTML = (((continent2018 / continent2008) - 1) * 100).toFixed(2) + "%";
+        document.querySelector("#growthEmissionAbsolute").innerHTML = (continent2018 - continent2008).toFixed(2) + "kg CO2";
+        document.querySelector('.chart').setAttribute('style', 'height:' + (100 / (emissionInsgesamt2018 / continent2008)).toFixed(2) + "%");
     }
     ;
     //EventListener
     //Europe
     document.querySelector(".europe").addEventListener("click", function () {
-        FunktionKontinentBerechnung("Europe", europe2008, europe2018);
+        FunktionKontinentBerechnung("Europe", europe2018, europe2008);
     });
     //Northamerica
     document.querySelector(".northamerica").addEventListener("click", function () {
-        FunktionKontinentBerechnung("Northamerica", northAmerica2008, northAmerica2018);
+        FunktionKontinentBerechnung("Northamerica", northAmerica2018, northAmerica2008);
     });
     //Southamerica
     document.querySelector(".southamerica").addEventListener("click", function () {
-        FunktionKontinentBerechnung("Southamerica", southAmerica2008, southAmerica2018);
+        FunktionKontinentBerechnung("Southamerica", southAmerica2018, southAmerica2008);
     });
     //Africa
     document.querySelector(".africa").addEventListener("click", function () {
-        FunktionKontinentBerechnung("Africa", africa2008, africa2018);
+        FunktionKontinentBerechnung("Africa", africa2018, africa2008);
     });
     //Asia
     document.querySelector(".asia").addEventListener("click", function () {
-        FunktionKontinentBerechnung("Asia", asia2008, asia2018);
+        FunktionKontinentBerechnung("Asia", asia2018, asia2008);
     });
     //Australia
     document.querySelector(".australia").addEventListener("click", function () {
-        FunktionKontinentBerechnung("Australia", australia2008, australia2018);
+        FunktionKontinentBerechnung("Australia", australia2018, australia2008);
     });
 })(aufgabe6 || (aufgabe6 = {}));
 ;
