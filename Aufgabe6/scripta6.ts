@@ -82,32 +82,27 @@ function FunktionKontinentBerechnung(continent: string, continent2018: number, c
 //Europe
 document.querySelector("#europe").addEventListener("click", function(){
     FunktionKontinentBerechnung("Europe", europe2018, europe2008)
-})
+});
  
 //Northamerica
 document.querySelector("#northamerica").addEventListener("click", function(){
     FunktionKontinentBerechnung("Northamerica", northAmerica2008, northAmerica2008)
-})
+});
  
-
 //Southamerica
 document.querySelector("#southamerica").addEventListener("click", function(){
     FunktionKontinentBerechnung("Southamerica", southAmerica2008, southAmerica2008)
-})
+});
  
 //Africa
 document.querySelector("#africa").addEventListener("click", function(){
     FunktionKontinentBerechnung("Africa", africa2008, africa2008)
-})
+});
 //Asia
 document.querySelector("#asia").addEventListener("click", function(){
     FunktionKontinentBerechnung("Asia", asia2008, asia2018)
-})
+});
 //Australia
-
-
-
-
 
 
 
