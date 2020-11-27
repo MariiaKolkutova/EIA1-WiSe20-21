@@ -58,34 +58,34 @@ var aufgabe6;
         document.querySelector("#titleRegion").innerHTML = continent;
         document.querySelector("#continentX").innerHTML = continent;
         document.querySelector("#emissionAbsolute2018").innerHTML = continent2018.toFixed(2) + "kg CO2";
-        document.querySelector("#emissionRelativeWorld").innerHTML = ((europe2018 / emissionInsgesamt2018) / 100).toFixed(2) + "%";
+        document.querySelector("#emissionRelativeWorld").innerHTML = ((emissionInsgesamt2018 / europe2018) / 100).toFixed(2) + "%";
         document.querySelector("#growthEmission08and18").innerHTML = (((continent2018 / continent2008) - 1) * 100).toFixed(2) + "%";
         document.querySelector("#growthEmissionAbsolute").innerHTML = (continent2018 - continent2008).toFixed(2) + "kg CO2";
     }
     ;
     //EventListener
     //Europe
-    document.querySelector("#europe").addEventListener("click", function () {
+    document.querySelector(".europe").addEventListener("click", function () {
         FunktionKontinentBerechnung("Europe", europe2018, europe2008);
     });
     //Northamerica
-    document.querySelector("#northamerica").addEventListener("click", function () {
+    document.querySelector(".northamerica").addEventListener("click", function () {
         FunktionKontinentBerechnung("Northamerica", northAmerica2008, northAmerica2008);
     });
     //Southamerica
-    document.querySelector("#southamerica").addEventListener("click", function () {
+    document.querySelector(".southamerica").addEventListener("click", function () {
         FunktionKontinentBerechnung("Southamerica", southAmerica2008, southAmerica2008);
     });
     //Africa
-    document.querySelector("#africa").addEventListener("click", function () {
+    document.querySelector(".africa").addEventListener("click", function () {
         FunktionKontinentBerechnung("Africa", africa2008, africa2008);
     });
     //Asia
-    document.querySelector("#asia").addEventListener("click", function () {
+    document.querySelector(".asia").addEventListener("click", function () {
         FunktionKontinentBerechnung("Asia", asia2008, asia2018);
     });
     //Australia
-    document.querySelector("#australia").addEventListener("click", function () {
+    document.querySelector(".australia").addEventListener("click", function () {
         FunktionKontinentBerechnung("Australia", australia2008, australia2018);
     });
 })(aufgabe6 || (aufgabe6 = {}));
