@@ -67,4 +67,25 @@ var PverglCO2eAustralia : number = (((australia2018 / australia2008) -1) * 100);
 
 //Funktion
 
+function FunktionAllgemein(continent: string, continent2018: number, emissionInsgesamt2008: number,  emissionInsgesamt2018: number) {
+    document.querySelector("#titleRegion").innerHTML = continent;
+    document.querySelector("#continentX").innerHTML = continent;
+    document.querySelector("#emissionAbsolute2018").innerHTML = continent2018.toFixed(1) + "kg CO2";
+    document.querySelector("#emissionRelativeWorld").innerHTML = (100 / (emissionInsgesamt2008 / emissionInsgesamt2018)).toFixed(1) + "%";
+    document.querySelector("#growthEmission08and18").innerHTML = (((emissionInsgesamt2008 / emissionInsgesamt2018) - 1) * 100).toFixed(1) + "%";
+    document.querySelector("#growthEmissionAbsolute").innerHTML = (emissionInsgesamt2018 - emissionInsgesamt2008).toFixed(1) + "kg CO2";
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
 };

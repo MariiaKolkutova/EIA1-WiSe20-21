@@ -53,6 +53,15 @@ var aufgabe6;
     var PverglCO2eAsia = (((asia2018 / asia2008) - 1) * 100);
     var PverglCO2eAustralia = (((australia2018 / australia2008) - 1) * 100);
     //Funktion
+    function FunktionAllgemein(continent, continent2018, emissionInsgesamt2008, emissionInsgesamt2018) {
+        document.querySelector("#titleRegion").innerHTML = continent;
+        document.querySelector("#continentX").innerHTML = continent;
+        document.querySelector("#emissionAbsolute2018").innerHTML = continent2018.toFixed(1) + "kg CO2";
+        document.querySelector("#emissionRelativeWorld").innerHTML = (100 / (emissionInsgesamt2008 / emissionInsgesamt2018)).toFixed(1) + "%";
+        document.querySelector("#growthEmission08and18").innerHTML = (((emissionInsgesamt2008 / emissionInsgesamt2018) - 1) * 100).toFixed(1) + "%";
+        document.querySelector("#growthEmissionAbsolute").innerHTML = (emissionInsgesamt2018 - emissionInsgesamt2008).toFixed(1) + "kg CO2";
+    }
+    ;
 })(aufgabe6 || (aufgabe6 = {}));
 ;
 //# sourceMappingURL=scripta6.js.map
