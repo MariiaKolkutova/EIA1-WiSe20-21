@@ -71,11 +71,11 @@ var aufgabe6;
     });
     //Northamerica
     document.querySelector(".northamerica").addEventListener("click", function () {
-        FunktionKontinentBerechnung("Northamerica", northAmerica2018, northAmerica2008);
+        FunktionKontinentBerechnung("North America", northAmerica2018, northAmerica2008);
     });
     //Southamerica
     document.querySelector(".southamerica").addEventListener("click", function () {
-        FunktionKontinentBerechnung("Southamerica", southAmerica2018, southAmerica2008);
+        FunktionKontinentBerechnung("South America", southAmerica2018, southAmerica2008);
     });
     //Africa
     document.querySelector(".africa").addEventListener("click", function () {
