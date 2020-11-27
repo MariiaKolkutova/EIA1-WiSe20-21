@@ -85,6 +85,9 @@ var aufgabe6;
         FunktionKontinentBerechnung("Asia", asia2008, asia2018);
     });
     //Australia
+    document.querySelector("#australia").addEventListener("click", function () {
+        FunktionKontinentBerechnung("Australia", australia2008, australia2018);
+    });
 })(aufgabe6 || (aufgabe6 = {}));
 ;
 //# sourceMappingURL=scripta6.js.map
