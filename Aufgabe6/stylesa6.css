@@ -21,7 +21,9 @@ section {
     margin: 20px;
     width: 200px;
 }
-
+ h2 {
+    color: rgb(175, 69, 7);
+ }
 .chartWrapper {
     position: relative;
     display: inline-block;
@@ -41,4 +43,7 @@ footer p {
     margin-top: 50px;
     font-size: 10px;
     opacity: .5;
+}
+#titleRegion{
+    color: rgb(175, 69, 7);
 }
