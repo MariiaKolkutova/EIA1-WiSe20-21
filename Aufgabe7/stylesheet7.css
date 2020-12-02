@@ -23,7 +23,7 @@ body{
 .drumSounds div{
     width: 150px;
     height: 150px;
-    border-radius: 30%;
+    border-radius: 20%;
     position: relative;
     justify-self: center;
 }
@@ -37,6 +37,8 @@ body{
 .sample8, .sample9{
     background-color: #F39C12;
 }
-.playbutton{
+
+.playButton{
     position: relative;
+    justify-self: center;
 }
