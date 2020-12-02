@@ -42,4 +42,7 @@ document.querySelector(".sample9").addEventListener("click", function () {
     playSample(8);
 });
 //7.2
+//setInterval(function() {
+// Anweisungen
+//}, 500);
 //# sourceMappingURL=scripta7.js.map

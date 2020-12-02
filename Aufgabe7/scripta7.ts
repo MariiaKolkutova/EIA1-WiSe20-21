@@ -1,4 +1,5 @@
 //7.1
+
 // Drum Pad Sounds -> Array
 var sample: HTMLAudioElement[] = [];
 sample[0] = new Audio('./mp3/A.mp3');
@@ -44,3 +45,6 @@ document.querySelector(".sample9").addEventListener("click", function() {
 });
 
 //7.2
+//setInterval(function() {
+// Anweisungen
+//}, 500);
