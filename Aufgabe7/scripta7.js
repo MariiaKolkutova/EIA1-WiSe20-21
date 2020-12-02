@@ -41,4 +41,5 @@ document.querySelector(".sample8").addEventListener("click", function () {
 document.querySelector(".sample9").addEventListener("click", function () {
     playSample(8);
 });
+//7.2
 //# sourceMappingURL=scripta7.js.map

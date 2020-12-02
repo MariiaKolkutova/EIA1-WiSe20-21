@@ -43,3 +43,4 @@ document.querySelector(".sample9").addEventListener("click", function() {
     playSample(8);
 });
 
+//7.2
