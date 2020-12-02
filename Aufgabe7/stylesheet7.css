@@ -9,7 +9,6 @@ body{
     justify-content: center;
     border: 0cm;
 }
-
 .drumSounds{
     position: relative;
     width: 30%;
@@ -30,14 +29,12 @@ body{
 .sample1, .sample2, .sample3{
     background-color: #31A6FE;
 }
-
 .sample4, .sample5, .sample6, .sample7{
     background-color: #FF487D;
 }
 .sample8, .sample9{
     background-color: #F39C12;
 }
-
 .playButton{
     position: relative;
     justify-self: center;
