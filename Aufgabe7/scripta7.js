@@ -41,8 +41,15 @@ document.querySelector(".sample8").addEventListener("click", function () {
 document.querySelector(".sample9").addEventListener("click", function () {
     playSample(8);
 });
-//7.2
-//setInterval(function() {
-// Anweisungen
-//}, 500);
+// Funktion für 7.2 
+function playBeat() {
+    setInterval(function () {
+        playSample(5);
+        playSample(8);
+        playSample(4);
+    }, 500);
+}
+document.querySelector(".playButton").addEventListener("click", function () {
+    playBeat();
+});
 //# sourceMappingURL=scripta7.js.map

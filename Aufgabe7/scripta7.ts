@@ -13,7 +13,7 @@ sample[7] = new Audio('./mp3/laugh-2.mp3');
 sample[8] = new Audio('./mp3/snare.mp3')
 
 //Funktion
-function playSample(mp3:number): void {sample[mp3].play()};
+function playSample(mp3:number) {sample[mp3].play()};
 
 //Event-Listeners
 document.querySelector(".sample1").addEventListener("click", function() {
@@ -44,7 +44,16 @@ document.querySelector(".sample9").addEventListener("click", function() {
     playSample(8);
 });
 
-//7.2
-//setInterval(function() {
-// Anweisungen
-//}, 500);
+// Funktion für 7.2 
+function playBeat() {  
+    setInterval(function() {
+        playSample(5);
+        playSample(8);
+        playSample(4);
+    }, 500);
+
+}
+document.querySelector(".playButton").addEventListener("click", function() {
+    playBeat();
+});
+
