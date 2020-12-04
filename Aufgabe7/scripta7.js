@@ -41,6 +41,7 @@ document.querySelector(".sample8").addEventListener("click", function () {
 document.querySelector(".sample9").addEventListener("click", function () {
     playSample(8);
 });
+//7.2
 // Funktion für 7.2 
 function playBeat() {
     setInterval(function () {
@@ -49,6 +50,7 @@ function playBeat() {
         playSample(4);
     }, 500);
 }
+;
 document.querySelector(".playButton").addEventListener("click", function () {
     playBeat();
 });
