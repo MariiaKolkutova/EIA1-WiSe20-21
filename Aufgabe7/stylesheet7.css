@@ -22,7 +22,7 @@ body{
 .drumSounds div{
     width: 150px;
     height: 150px;
-    border-radius: 20%;
+    border-radius: 35%;
     position: relative;
     justify-self: center;
 }
