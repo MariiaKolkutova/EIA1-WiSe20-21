@@ -12,7 +12,7 @@ sample[7] = new Audio('./mp3/laugh-2.mp3');
 sample[8] = new Audio('./mp3/snare.mp3');
 
 //Funktion
-function playSample(mp3:number) {sample[mp3].play()};
+function playSample(mp3:number):void {sample[mp3].play()};
 
 //Event-Listeners
 document.querySelector(".sample1").addEventListener("click", function() {
