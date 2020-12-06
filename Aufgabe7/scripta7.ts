@@ -53,6 +53,7 @@ function playBeat() {
     }, 500);
 
 };
+//Event-Listener 7.2
 document.querySelector(".playButton").addEventListener("click", function() {
     playBeat();
 });
