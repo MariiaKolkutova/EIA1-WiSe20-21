@@ -50,7 +50,7 @@ function playBeat() {
         playSample(5);
         playSample(8);
         playSample(4);
-    }, 500);
+    }, 300);
 
 };
 //Event-Listener 7.2
