@@ -46,6 +46,7 @@ document.querySelector(".sample9").addEventListener("click", function() {
 //7.2
 // 
  let sequence: string[] = ['./mp3/hihat.mp3','./mp3/kick.mp3','./mp3/snare.mp3'];
+ 
  let indexSequence: number = 0;
  
  function playBeat() {
@@ -55,6 +56,7 @@ document.querySelector(".sample9").addEventListener("click", function() {
          indexSequence = indexSequence + 1;
         }, 300);
  };
+ 
  document.querySelector(".playButton").addEventListener("click", function() {
         playBeat();
 });
