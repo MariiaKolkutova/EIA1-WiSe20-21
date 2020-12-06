@@ -1,6 +1,6 @@
 //7.1
 // Drum Pad Sounds -> Array
-var sample: HTMLAudioElement[] = [];
+let sample: HTMLAudioElement[] = [];
 sample[0] = new Audio('./mp3/A.mp3');
 sample[1] = new Audio('./mp3/C.mp3');
 sample[2] = new Audio('./mp3/F.mp3');
@@ -12,7 +12,7 @@ sample[7] = new Audio('./mp3/laugh-2.mp3');
 sample[8] = new Audio('./mp3/snare.mp3');
 
 //Funktion
-function playSample(mp3:number):void {sample[mp3].play()};
+function playSample(mp3:number) {sample[mp3].play()};
 
 //Event-Listeners
 document.querySelector(".sample1").addEventListener("click", function() {
