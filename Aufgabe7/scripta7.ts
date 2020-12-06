@@ -44,17 +44,17 @@ document.querySelector(".sample9").addEventListener("click", function() {
 });
 
 //7.2
-// Funktion für 7.2 
-function playBeat() {  
-    setInterval(function() {
-        playSample(5);
-        playSample(8);
-        playSample(4);
-    }, 300);
-
-};
-//Event-Listener 7.2
-document.querySelector(".playButton").addEventListener("click", function() {
-    playBeat();
+// 
+ let sequence: string[] = ['./mp3/hihat.mp3','./mp3/kick.mp3','./mp3/snare.mp3'];
+ let indexSequence: number = 0;
+ 
+ function playBeat() {
+     setInterval(function () {
+         let sample: HTMLAudioElement = new Audio(sequence[indexSequence]);
+         sample.play();
+         indexSequence = indexSequence + 1;
+        }, 300);
+ };
+ document.querySelector(".playButton").addEventListener("click", function() {
+        playBeat();
 });
-
