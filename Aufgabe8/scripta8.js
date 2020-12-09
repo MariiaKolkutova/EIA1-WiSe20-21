@@ -51,7 +51,6 @@ function playBeat() {
         indexSequence2 = indexSequence2 + 1;
     }, 300);
 }
-;
 //Aufgabe 8
 //Icons
 var myPlay = document.getElementById("play");
