@@ -56,4 +56,4 @@ function playBeat() {
 document.querySelector(".playButton").addEventListener("click", function () {
     playBeat();
 });
-//# sourceMappingURL=scripta7.js.map
+//# sourceMappingURL=scripta8.js.map
