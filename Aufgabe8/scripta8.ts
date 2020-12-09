@@ -12,7 +12,7 @@ beat[7] = new Audio("./mp3/laugh-2.mp3");
 beat[8] = new Audio("./mp3/snare.mp3");
 
 //Funktion
-function playSample(mp3: number): void { beat[mp3].play() };
+function playSample(mp3: number): void { beat[mp3].play()}
 
 //Event-Listeners
 document.querySelector(".sample1").addEventListener("click", function () {
@@ -58,8 +58,21 @@ function playBeat(): void {
 };
 
 //Aufgabe 8
+//Icons
 
-document.getElementById("play").addEventListener("click", function(): void {
-this.classList.add("is-hidden");
-document.getElementById("pause").classList.remove("is-hidden");
+const myPlay: HTMLElement = document.getElementById("play");
+const myPause: HTMLElement = document.getElementById("pause");
+
+myPlay.addEventListener("click", function(): void {
+toogleClasses(this, myPlay);
 });
+
+myPause.addEventListener("click", function(): void {
+toogleClasses(this, myPause);
+});
+
+
+function toogleClasses(firstHTMLElement: HTMLElement, secondHTMLElement: HTMLElement): void{
+firstHTMLElement.classList.add("is-hidden");
+secondHTMLElement.classList.remove("is-hidden"); 
+}

@@ -12,7 +12,6 @@ beat[7] = new Audio("./mp3/laugh-2.mp3");
 beat[8] = new Audio("./mp3/snare.mp3");
 //Funktion
 function playSample(mp3) { beat[mp3].play(); }
-;
 //Event-Listeners
 document.querySelector(".sample1").addEventListener("click", function () {
     playSample(0);
@@ -54,8 +53,17 @@ function playBeat() {
 }
 ;
 //Aufgabe 8
-document.getElementById("play").addEventListener("click", function () {
-    this.classList.add("is-hidden");
-    document.getElementById("pause").classList.remove("is-hidden");
+//Icons
+var myPlay = document.getElementById("play");
+var myPause = document.getElementById("pause");
+myPlay.addEventListener("click", function () {
+    toogleClasses(this, myPlay);
 });
+myPause.addEventListener("click", function () {
+    toogleClasses(this, myPause);
+});
+function toogleClasses(firstHTMLElement, secondHTMLElement) {
+    firstHTMLElement.classList.add("is-hidden");
+    secondHTMLElement.classList.remove("is-hidden");
+}
 //# sourceMappingURL=scripta8.js.map
