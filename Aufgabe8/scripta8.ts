@@ -57,6 +57,9 @@ function playBeat(): void {
     },          300);
 };
 
-document.querySelector(".playButton").addEventListener("click", function () {
-    playBeat();
+//Aufgabe 8
+
+document.getElementById("play").addEventListener("click", function(): void {
+this.classList.add("is-hidden");
+document.getElementById("pause").classList.remove("is-hidden");
 });

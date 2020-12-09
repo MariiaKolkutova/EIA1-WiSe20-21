@@ -36,3 +36,6 @@ body{
 .sample8, .sample9{
     background-color: #F39C12;
 }
+.is-hidden{
+    display: none !important;
+}

@@ -1,17 +1,17 @@
 //7.1
 // Drum Pad Sounds -> Array
-var sample = [];
-sample[0] = new Audio('./mp3/A.mp3');
-sample[1] = new Audio('./mp3/C.mp3');
-sample[2] = new Audio('./mp3/F.mp3');
-sample[3] = new Audio('./mp3/G.mp3');
-sample[4] = new Audio('./mp3/hihat.mp3');
-sample[5] = new Audio('./mp3/kick.mp3');
-sample[6] = new Audio('./mp3/laugh-1.mp3');
-sample[7] = new Audio('./mp3/laugh-2.mp3');
-sample[8] = new Audio('./mp3/snare.mp3');
+var beat = [];
+beat[0] = new Audio("./mp3/A.mp3");
+beat[1] = new Audio("./mp3/C.mp3");
+beat[2] = new Audio("./mp3/F.mp3");
+beat[3] = new Audio("./mp3/G.mp3");
+beat[4] = new Audio("./mp3/hihat.mp3");
+beat[5] = new Audio("./mp3/kick.mp3");
+beat[6] = new Audio("./mp3/laugh-1.mp3");
+beat[7] = new Audio("./mp3/laugh-2.mp3");
+beat[8] = new Audio("./mp3/snare.mp3");
 //Funktion
-function playSample(mp3) { sample[mp3].play(); }
+function playSample(mp3) { beat[mp3].play(); }
 ;
 //Event-Listeners
 document.querySelector(".sample1").addEventListener("click", function () {
@@ -43,17 +43,19 @@ document.querySelector(".sample9").addEventListener("click", function () {
 });
 //7.2
 // 
-var sequence = ['./mp3/hihat.mp3', './mp3/kick.mp3', './mp3/snare.mp3'];
-var indexSequence = 0;
+var sequence2 = ["./mp3/hihat.mp3", "./mp3/kick.mp3", "./mp3/snare.mp3"];
+var indexSequence2 = 0;
 function playBeat() {
     setInterval(function () {
-        var sample = new Audio(sequence[indexSequence]);
+        var sample = new Audio(sequence2[indexSequence2]);
         sample.play();
-        indexSequence = indexSequence + 1;
+        indexSequence2 = indexSequence2 + 1;
     }, 300);
 }
 ;
-document.querySelector(".playButton").addEventListener("click", function () {
-    playBeat();
+//Aufgabe 8
+document.getElementById("play").addEventListener("click", function () {
+    this.classList.add("is-hidden");
+    document.getElementById("pause").classList.remove("is-hidden");
 });
 //# sourceMappingURL=scripta8.js.map
