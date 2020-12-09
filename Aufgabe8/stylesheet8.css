@@ -1,5 +1,5 @@
 body{
-    background-color: #000000;
+    background-color: #ffffff;
     position: absolute;
     display: flex;
     height: 40%;
@@ -35,7 +35,8 @@ body{
 .sample8, .sample9{
     background-color: #F39C12;
 }
-.playButton{
-    position: relative;
-    justify-self: center;
+
+.fas fa-play{
+size: 50%;
+ 
 }
