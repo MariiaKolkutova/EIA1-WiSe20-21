@@ -9,7 +9,7 @@ body{
     justify-content: center;
     border: 0cm;
 }
-.drumSounds{
+.wrapper{
     position: relative;
     width: 30%;
     height: 30%;
@@ -18,8 +18,9 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     margin: 0%;
+    font-size: 100px;
 }
-.drumSounds div{
+.wrapper div{
     width: 150px;
     height: 150px;
     border-radius: 35%;
@@ -34,9 +35,4 @@ body{
 }
 .sample8, .sample9{
     background-color: #F39C12;
-}
-
-.fas fa-play{
-size: 50%;
- 
 }
