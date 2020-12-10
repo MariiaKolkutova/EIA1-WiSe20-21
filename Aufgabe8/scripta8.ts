@@ -12,8 +12,8 @@ sample[6] = new Audio("./mp3/laugh-1.mp3");
 sample[7] = new Audio("./mp3/laugh-2.mp3");
 sample[8] = new Audio("./mp3/snare.mp3");
 
-//Funktion
-function playSample(mp3: number) {sample[mp3].play()};
+//Funktion für 
+function playSample(mp3: number): void {sample[mp3].play(); }
 
 //Event-Listeners
 document.querySelector(".sample1").addEventListener("click", function(): void {
@@ -49,15 +49,11 @@ let sequence2: string[] = ["./mp3/hihat.mp3", "./mp3/kick.mp3", "./mp3/snare.mp3
 
 let indexSequence2: number = 0;
 
-function playBeat(): void {
-    setInterval(function (): void {
-        let sample: HTMLAudioElement = new Audio(sequence2[indexSequence2]);
-        sample.play();
-        indexSequence2 = indexSequence2 + 1;
-    },          300);
-}
+
 //Aufgabe 8
+
 //Icons
+//play und Pause
 const myPlay: HTMLElement = document.getElementById("play");
 const myPause: HTMLElement = document.getElementById("pause");
 
@@ -73,5 +69,9 @@ function toogleClasses(firstHTMLElement: HTMLElement, secondHTMLElement: HTM
 firstHTMLElement.classList.add("is-hidden");
 secondHTMLElement.classList.remove("is-hidden"); 
 }
+
+
+//Funktion für Play/Pause 
+//Funktion für Record/Delete 
 
 }
