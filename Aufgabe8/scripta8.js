@@ -44,8 +44,21 @@ var L8;
     });
     //7.2
     // 
-    var sequence2 = ["./mp3/hihat.mp3", "./mp3/kick.mp3", "./mp3/snare.mp3"];
-    var indexSequence2 = 0;
+    var sequence = ["./mp3/hihat.mp3", "./mp3/kick.mp3", "./mp3/snare.mp3"];
+    var indexSequence = 0;
+    var myInterval;
+    var beatLoop;
+    function playBeat() {
+        if (beatLoop == true) {
+            myInterval = setInterval(function () {
+                sample[2].play();
+            }, 300);
+        }
+        else {
+            clearInterval(myInterval);
+        }
+    }
+    ;
     //Aufgabe 8
     //Icons
     //play und Pause
@@ -53,9 +66,13 @@ var L8;
     var myPause = document.getElementById("pause");
     myPlay.addEventListener("click", function () {
         toogleClasses(this, myPause);
+        beatLoop = true;
+        playBeat();
     });
     myPause.addEventListener("click", function () {
         toogleClasses(this, myPlay);
+        beatLoop = false;
+        playBeat();
     });
     function toogleClasses(firstHTMLElement, secondHTMLElement) {
         firstHTMLElement.classList.add("is-hidden");

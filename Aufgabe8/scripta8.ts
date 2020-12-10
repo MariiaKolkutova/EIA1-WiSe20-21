@@ -45,9 +45,26 @@ document.querySelector(".sample9").addEventListener("click", function(): void {
 });
 //7.2
 // 
-let sequence2: string[] = ["./mp3/hihat.mp3", "./mp3/kick.mp3", "./mp3/snare.mp3"];
+let sequence: string[] = ["./mp3/hihat.mp3", "./mp3/kick.mp3", "./mp3/snare.mp3"];
 
-let indexSequence2: number = 0;
+let indexSequence: number = 0;
+
+let myInterval: number;
+
+var beatLoop: boolean;
+
+function playBeat() {
+    
+      
+       if ( beatLoop == true ){
+        myInterval = setInterval(function (): void {
+            sample[2].play();
+               }, 300);
+       } else {
+        clearInterval(myInterval);
+       }
+};
+
 
 
 //Aufgabe 8
@@ -59,10 +76,14 @@ const myPause: HTMLElement = document.getElementById("pause");
 
 myPlay.addEventListener("click", function (): void {
 toogleClasses(this, myPause);
+beatLoop = true;
+playBeat();
 });
 
 myPause.addEventListener("click", function (): void {
 toogleClasses(this, myPlay);
+beatLoop = false;
+playBeat();
 });
 
 function toogleClasses(firstHTMLElement: HTMLElement, secondHTMLElement: HTMLElement): void {
