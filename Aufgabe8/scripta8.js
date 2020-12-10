@@ -1,6 +1,5 @@
 var L8;
 (function (L8) {
-    //7.1
     // Drum Pad Sounds -> Array
     var sample = [];
     sample[0] = new Audio("./mp3/A.mp3");
@@ -14,7 +13,7 @@ var L8;
     sample[8] = new Audio("./mp3/snare.mp3");
     //Funktion für 
     function playSample(mp3) { sample[mp3].play(); }
-    //Event-Listeners
+    //Event-Listeners --> PlaySample UND Beatrecord 
     document.querySelector(".sample1").addEventListener("click", function () {
         playSample(0);
         beatrecord(0);
@@ -51,11 +50,13 @@ var L8;
         playSample(8);
         beatrecord(8);
     });
-    var sequence = ["./mp3/hihat.mp3", "./mp3/kick.mp3", "./mp3/snare.mp3"];
-    var indexSequence = 0;
+    // myInterval definieren
     var myInterval;
+    // Boolean --> true or false
     var beatPlay;
+    // Var "z" definieren 
     var z = 0;
+    // Funktion!!! --> if else 
     function playBeat() {
         if (beatPlay == true) {
             myInterval = setInterval(function () {
@@ -72,10 +73,7 @@ var L8;
             clearInterval(myInterval);
         }
     }
-    ;
-    //Aufgabe 8
-    //Icons
-    //play und Pause
+    //Play und Pause Buttons
     var myPlay = document.getElementById("play");
     var myPause = document.getElementById("pause");
     myPlay.addEventListener("click", function () {
@@ -92,6 +90,7 @@ var L8;
         firstHTMLElement.classList.add("is-hidden");
         secondHTMLElement.classList.remove("is-hidden");
     }
+    //Record Button
     var recordbtn = document.getElementById("record");
     recordbtn.addEventListener("click", function () {
         if (recordbtn.classList.contains("active")) {
@@ -107,6 +106,7 @@ var L8;
             beatLoop.push(pad);
         }
     }
+    //Delete Button
     var deletebtn = document.getElementById("delete");
     deletebtn.addEventListener("click", function () { beatLoop = []; });
 })(L8 || (L8 = {}));

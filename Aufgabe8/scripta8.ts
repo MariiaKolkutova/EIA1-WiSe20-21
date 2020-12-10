@@ -1,5 +1,4 @@
 namespace L8 {
-//7.1
 // Drum Pad Sounds -> Array
 let sample: HTMLAudioElement[] = [];
 sample[0] = new Audio("./mp3/A.mp3");
@@ -15,7 +14,7 @@ sample[8] = new Audio("./mp3/snare.mp3");
 //Funktion für 
 function playSample(mp3: number): void {sample[mp3].play(); }
 
-//Event-Listeners
+//Event-Listeners --> PlaySample UND Beatrecord 
 document.querySelector(".sample1").addEventListener("click", function(): void {
     playSample(0);
     beatrecord(0);
@@ -53,16 +52,16 @@ document.querySelector(".sample9").addEventListener("click", function(): void {
     beatrecord(8);
 });
 
-let sequence: string[] = ["./mp3/hihat.mp3", "./mp3/kick.mp3", "./mp3/snare.mp3"];
-
-let indexSequence: number = 0;
-
+// myInterval definieren
 let myInterval: number;
 
+// Boolean --> true or false
 var beatPlay: boolean;
 
+// Var "z" definieren 
 var z: number = 0;
 
+// Funktion!!! --> if else 
 function playBeat(): void {
     
       
@@ -70,23 +69,23 @@ function playBeat(): void {
         myInterval = setInterval(function (): void {
             if (z < beatLoop.length) { 
             playSample(beatLoop[z]);
-            z++;}
-            else{
+            z++; }
+            else {
             z = 0;
             }
                },                300);
        } else {
         clearInterval(myInterval);
        }
-};
+}
 
 
 
-//Aufgabe 8
 
-//Icons
-//play und Pause
+
+//Play und Pause Buttons
 const myPlay: HTMLElement = document.getElementById("play");
+
 const myPause: HTMLElement = document.getElementById("pause");
 
 myPlay.addEventListener("click", function (): void {
@@ -107,7 +106,7 @@ secondHTMLElement.classList.remove("is-hidden"); 
 }
 
 
- 
+//Record Button
 const recordbtn: HTMLElement = document.getElementById("record");
 
 recordbtn.addEventListener("click", function (): void {
@@ -121,13 +120,12 @@ recordbtn.addEventListener("click", function (): void {
 let beatLoop: number[] = [];
 
 function beatrecord(pad: number): void {
-if (recordbtn.classList.contains("active"))
-{beatLoop.push(pad)}
+if (recordbtn.classList.contains("active")) {beatLoop.push(pad)}
 }
 
+//Delete Button
 const deletebtn: HTMLElement = document.getElementById("delete");
 
-deletebtn.addEventListener("click", function(): void 
-{beatLoop = []; });
+deletebtn.addEventListener("click", function(): void {beatLoop = []; });
 
 }
