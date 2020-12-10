@@ -80,9 +80,6 @@ function playBeat(): void {
 }
 
 
-
-
-
 //Play und Pause Buttons
 const myPlay: HTMLElement = document.getElementById("play");
 
