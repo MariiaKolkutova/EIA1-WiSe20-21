@@ -120,10 +120,14 @@ recordbtn.addEventListener("click", function (): void {
 
 let beatLoop: number[] = [];
 
-function beatrecord(pad: number): void{
+function beatrecord(pad: number): void {
 if (recordbtn.classList.contains("active"))
 {beatLoop.push(pad)}
 }
 
-const myDelete: HTMLElement = document.getElementById("delete");
+const deletebtn: HTMLElement = document.getElementById("delete");
+
+deletebtn.addEventListener("click", function(): void 
+{beatLoop = []; });
+
 }

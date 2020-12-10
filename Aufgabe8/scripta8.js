@@ -107,6 +107,7 @@ var L8;
             beatLoop.push(pad);
         }
     }
-    var myDelete = document.getElementById("delete");
+    var deletebtn = document.getElementById("delete");
+    deletebtn.addEventListener("click", function () { beatLoop = []; });
 })(L8 || (L8 = {}));
 //# sourceMappingURL=scripta8.js.map
