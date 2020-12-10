@@ -1,3 +1,4 @@
+namespace L8 {
 //7.1
 // Drum Pad Sounds -> Array
 let beat: HTMLAudioElement[] = [];
@@ -71,7 +72,8 @@ myPause.addEventListener("click", function(): void {
 toogleClasses(this, myPause);
 });
 
-function toogleClasses(firstHTMLElement: HTMLElement, secondHTMLElement: HTMLElement): void{
+function toogleClasses(firstHTMLElement: HTMLElement, secondHTMLElement: HTMLElement): void {
 firstHTMLElement.classList.add("is-hidden");
 secondHTMLElement.classList.remove("is-hidden"); 
+}
 }

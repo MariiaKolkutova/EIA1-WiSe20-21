@@ -1,3 +1,4 @@
+namespace L7{
 //7.1
 // Drum Pad Sounds -> Array
 let sample: HTMLAudioElement[] = [];
@@ -60,3 +61,4 @@ document.querySelector(".sample9").addEventListener("click", function() {
  document.querySelector(".playButton").addEventListener("click", function() {
         playBeat();
 });
+}
