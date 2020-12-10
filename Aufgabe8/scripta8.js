@@ -17,41 +17,55 @@ var L8;
     //Event-Listeners
     document.querySelector(".sample1").addEventListener("click", function () {
         playSample(0);
+        beatrecord(0);
     });
     document.querySelector(".sample2").addEventListener("click", function () {
         playSample(1);
+        beatrecord(1);
     });
     document.querySelector(".sample3").addEventListener("click", function () {
         playSample(2);
+        beatrecord(2);
     });
     document.querySelector(".sample4").addEventListener("click", function () {
         playSample(3);
+        beatrecord(3);
     });
     document.querySelector(".sample5").addEventListener("click", function () {
         playSample(4);
+        beatrecord(4);
     });
     document.querySelector(".sample6").addEventListener("click", function () {
         playSample(5);
+        beatrecord(5);
     });
     document.querySelector(".sample7").addEventListener("click", function () {
         playSample(6);
+        beatrecord(6);
     });
     document.querySelector(".sample8").addEventListener("click", function () {
         playSample(7);
+        beatrecord(7);
     });
     document.querySelector(".sample9").addEventListener("click", function () {
         playSample(8);
+        beatrecord(8);
     });
-    //7.2
-    // 
     var sequence = ["./mp3/hihat.mp3", "./mp3/kick.mp3", "./mp3/snare.mp3"];
     var indexSequence = 0;
     var myInterval;
-    var beatLoop;
+    var beatPlay;
+    var z = 0;
     function playBeat() {
-        if (beatLoop == true) {
+        if (beatPlay == true) {
             myInterval = setInterval(function () {
-                sample[2].play();
+                if (z < beatLoop.length) {
+                    playSample(beatLoop[z]);
+                    z++;
+                }
+                else {
+                    z = 0;
+                }
             }, 300);
         }
         else {
@@ -66,19 +80,33 @@ var L8;
     var myPause = document.getElementById("pause");
     myPlay.addEventListener("click", function () {
         toogleClasses(this, myPause);
-        beatLoop = true;
+        beatPlay = true;
         playBeat();
     });
     myPause.addEventListener("click", function () {
         toogleClasses(this, myPlay);
-        beatLoop = false;
+        beatPlay = false;
         playBeat();
     });
     function toogleClasses(firstHTMLElement, secondHTMLElement) {
         firstHTMLElement.classList.add("is-hidden");
         secondHTMLElement.classList.remove("is-hidden");
     }
-    //Funktion für Play/Pause 
-    //Funktion für Record/Delete 
+    var recordbtn = document.getElementById("record");
+    recordbtn.addEventListener("click", function () {
+        if (recordbtn.classList.contains("active")) {
+            recordbtn.classList.remove("active");
+        }
+        else {
+            recordbtn.classList.add("active");
+        }
+    });
+    var beatLoop = [];
+    function beatrecord(pad) {
+        if (recordbtn.classList.contains("active")) {
+            beatLoop.push(pad);
+        }
+    }
+    var myDelete = document.getElementById("delete");
 })(L8 || (L8 = {}));
 //# sourceMappingURL=scripta8.js.map

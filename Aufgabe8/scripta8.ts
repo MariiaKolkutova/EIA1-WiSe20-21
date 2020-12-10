@@ -18,48 +18,63 @@ function playSample(mp3: number): void {sample[mp3].play(); }
 //Event-Listeners
 document.querySelector(".sample1").addEventListener("click", function(): void {
     playSample(0);
+    beatrecord(0);
 });
 document.querySelector(".sample2").addEventListener("click", function(): void {
     playSample(1);
+    beatrecord(1);
 });
 document.querySelector(".sample3").addEventListener("click", function(): void {
     playSample(2);
+    beatrecord(2);
 });
 document.querySelector(".sample4").addEventListener("click", function(): void {
     playSample(3);
+    beatrecord(3);
 });
 document.querySelector(".sample5").addEventListener("click", function(): void {
     playSample(4);
+    beatrecord(4);
 });
 document.querySelector(".sample6").addEventListener("click", function(): void {
     playSample(5);
+    beatrecord(5);
 });
 document.querySelector(".sample7").addEventListener("click", function(): void {
     playSample(6);
+    beatrecord(6);
 });
 document.querySelector(".sample8").addEventListener("click", function(): void {
     playSample(7);
+    beatrecord(7);
 });
 document.querySelector(".sample9").addEventListener("click", function(): void {
     playSample(8);
+    beatrecord(8);
 });
-//7.2
-// 
+
 let sequence: string[] = ["./mp3/hihat.mp3", "./mp3/kick.mp3", "./mp3/snare.mp3"];
 
 let indexSequence: number = 0;
 
 let myInterval: number;
 
-var beatLoop: boolean;
+var beatPlay: boolean;
 
-function playBeat() {
+var z: number = 0;
+
+function playBeat(): void {
     
       
-       if ( beatLoop == true ){
+       if ( beatPlay == true ) {
         myInterval = setInterval(function (): void {
-            sample[2].play();
-               }, 300);
+            if (z < beatLoop.length) { 
+            playSample(beatLoop[z]);
+            z++;}
+            else{
+            z = 0;
+            }
+               },                300);
        } else {
         clearInterval(myInterval);
        }
@@ -76,13 +91,13 @@ const myPause: HTMLElement = document.getElementById("pause");
 
 myPlay.addEventListener("click", function (): void {
 toogleClasses(this, myPause);
-beatLoop = true;
+beatPlay = true;
 playBeat();
 });
 
 myPause.addEventListener("click", function (): void {
 toogleClasses(this, myPlay);
-beatLoop = false;
+beatPlay = false;
 playBeat();
 });
 
@@ -92,7 +107,23 @@ secondHTMLElement.classList.remove("is-hidden"); 
 }
 
 
-//Funktion für Play/Pause 
-//Funktion für Record/Delete 
+ 
+const recordbtn: HTMLElement = document.getElementById("record");
 
+recordbtn.addEventListener("click", function (): void {
+    if (recordbtn.classList.contains("active")) {
+        recordbtn.classList.remove("active");
+    } else {
+        recordbtn.classList.add("active");
+    }
+});
+
+let beatLoop: number[] = [];
+
+function beatrecord(pad: number): void{
+if (recordbtn.classList.contains("active"))
+{beatLoop.push(pad)}
+}
+
+const myDelete: HTMLElement = document.getElementById("delete");
 }
