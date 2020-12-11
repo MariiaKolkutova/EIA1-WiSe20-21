@@ -53,6 +53,38 @@ document.querySelector(".sample9").addEventListener("click", function(): void {
     beatrecord(8);
 });
 
+//Record Button
+const recordbtn: HTMLElement = document.getElementById("record");
+
+/* aktivieren und deaktivieren vom "Record Button" 
+-> nur beim click "active"!
+-> "recordbtn.classList" --> contains/ remove/ add!!*/
+
+recordbtn.addEventListener("click", function (): void {
+    if (recordbtn.classList.contains("active")) {
+        recordbtn.classList.remove("active");
+    } else {
+        recordbtn.classList.add("active");
+    }
+});
+
+// Array für "beatLoop" --> speichern Beats 
+let beatLoop: number[] = [];
+
+/* Funktion für Beatrecord 
+-> es sollt aufnehmen beim click auf den record Button 
++ aufhören beim erneuten click
+-> Array soll geleert werden*/
+
+function beatrecord(pad: number): void {
+if (recordbtn.classList.contains("active")) {beatLoop.push(pad); }
+}
+
+//Delete Button
+const deletebtn: HTMLElement = document.getElementById("delete");
+
+deletebtn.addEventListener("click", function(): void {beatLoop = []; });
+
 // myInterval definieren -> Parameter! 
 let myInterval: number;
 
@@ -116,39 +148,5 @@ function toogleClasses(firstHTMLElement: HTMLElement, secondHTMLElement: HTM
 firstHTMLElement.classList.add("is-hidden");
 secondHTMLElement.classList.remove("is-hidden"); 
 }
-
-
-//Record Button
-const recordbtn: HTMLElement = document.getElementById("record");
-
-/* aktivieren und deaktivieren vom "Record Button" 
--> nur beim click "active"!
--> "recordbtn.classList" --> contains/ remove/ add!!*/
-
-recordbtn.addEventListener("click", function (): void {
-    if (recordbtn.classList.contains("active")) {
-        recordbtn.classList.remove("active");
-    } else {
-        recordbtn.classList.add("active");
-    }
-});
-
-
-// Array für "beatLoop" --> speichern Beats 
-let beatLoop: number[] = [];
-
-/* Funktion für Beatrecord 
--> es sollt aufnehmen beim click auf den record Button 
-+ aufhören beim erneuten click
--> Array soll geleert werden*/
-
-function beatrecord(pad: number): void {
-if (recordbtn.classList.contains("active")) {beatLoop.push(pad); }
-}
-
-//Delete Button
-const deletebtn: HTMLElement = document.getElementById("delete");
-
-deletebtn.addEventListener("click", function(): void {beatLoop = []; });
 
 }

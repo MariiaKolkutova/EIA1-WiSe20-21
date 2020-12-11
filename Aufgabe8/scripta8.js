@@ -50,6 +50,33 @@ var L8;
         playSample(8);
         beatrecord(8);
     });
+    //Record Button
+    var recordbtn = document.getElementById("record");
+    /* aktivieren und deaktivieren vom "Record Button"
+    -> nur beim click "active"!
+    -> "recordbtn.classList" --> contains/ remove/ add!!*/
+    recordbtn.addEventListener("click", function () {
+        if (recordbtn.classList.contains("active")) {
+            recordbtn.classList.remove("active");
+        }
+        else {
+            recordbtn.classList.add("active");
+        }
+    });
+    // Array für "beatLoop" --> speichern Beats 
+    var beatLoop = [];
+    /* Funktion für Beatrecord
+    -> es sollt aufnehmen beim click auf den record Button
+    + aufhören beim erneuten click
+    -> Array soll geleert werden*/
+    function beatrecord(pad) {
+        if (recordbtn.classList.contains("active")) {
+            beatLoop.push(pad);
+        }
+    }
+    //Delete Button
+    var deletebtn = document.getElementById("delete");
+    deletebtn.addEventListener("click", function () { beatLoop = []; });
     // myInterval definieren -> Parameter! 
     var myInterval;
     /* Boolean --> true or false Aussagen
@@ -102,32 +129,5 @@ var L8;
         firstHTMLElement.classList.add("is-hidden");
         secondHTMLElement.classList.remove("is-hidden");
     }
-    //Record Button
-    var recordbtn = document.getElementById("record");
-    /* aktivieren und deaktivieren vom "Record Button"
-    -> nur beim click "active"!
-    -> "recordbtn.classList" --> contains/ remove/ add!!*/
-    recordbtn.addEventListener("click", function () {
-        if (recordbtn.classList.contains("active")) {
-            recordbtn.classList.remove("active");
-        }
-        else {
-            recordbtn.classList.add("active");
-        }
-    });
-    // Array für "beatLoop" --> speichern Beats 
-    var beatLoop = [];
-    /* Funktion für Beatrecord
-    -> es sollt aufnehmen beim click auf den record Button
-    + aufhören beim erneuten click
-    -> Array soll geleert werden*/
-    function beatrecord(pad) {
-        if (recordbtn.classList.contains("active")) {
-            beatLoop.push(pad);
-        }
-    }
-    //Delete Button
-    var deletebtn = document.getElementById("delete");
-    deletebtn.addEventListener("click", function () { beatLoop = []; });
 })(L8 || (L8 = {}));
 //# sourceMappingURL=scripta8.js.map
