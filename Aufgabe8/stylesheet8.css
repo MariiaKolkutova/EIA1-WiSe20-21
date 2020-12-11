@@ -28,23 +28,24 @@ body{
     justify-self: center;
 }
 .sample1, .sample2, .sample3{
-    background-color: #31A6FE;
+    background-color: #e0e0e0;
 }
 .sample4, .sample5, .sample6, .sample7{
-    background-color: #FF487D;
+    background-color: #949494;
 }
 .sample8, .sample9{
-    background-color: #F39C12;
+    background-color: #575757;
 }
 .is-hidden{
     display: none !important;
 }
 
 i:hover{
- color: #8c8d8e;
+ color: #d6d6d6;
 }
 
 .active{
     color: #960707;
 }
+
 
