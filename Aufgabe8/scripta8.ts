@@ -1,5 +1,6 @@
 namespace L8 {
-// Drum Pad Sounds -> Array
+
+// Drum Pad Sounds -> Array -> für alle Beats
 let sample: HTMLAudioElement[] = [];
 sample[0] = new Audio("./mp3/A.mp3");
 sample[1] = new Audio("./mp3/C.mp3");
@@ -11,10 +12,10 @@ sample[6] = new Audio("./mp3/laugh-1.mp3");
 sample[7] = new Audio("./mp3/laugh-2.mp3");
 sample[8] = new Audio("./mp3/snare.mp3");
 
-//Funktion für 
+//Funktion Abspielen von Beats für jedes Button 
 function playSample(mp3: number): void {sample[mp3].play(); }
 
-//Event-Listeners --> PlaySample UND Beatrecord 
+//Event-Listeners --> PlaySample UND Beatrecord!! 
 document.querySelector(".sample1").addEventListener("click", function(): void {
     playSample(0);
     beatrecord(0);
@@ -52,16 +53,23 @@ document.querySelector(".sample9").addEventListener("click", function(): void {
     beatrecord(8);
 });
 
-// myInterval definieren
+// myInterval definieren -> Parameter! 
 let myInterval: number;
 
-// Boolean --> true or false
+/* Boolean --> true or false Aussagen 
+-> für if it's true/ if it's false -> if-else Aussagen*/
 var beatPlay: boolean;
 
-// Var "z" definieren 
+/* eine Variable "z" definiert 
+--> eine unbestimmte/ flexibele Zahl*/  
 var z: number = 0;
 
-// Funktion!!! --> if else 
+// Funktion!!! --> if-else 
+/* Abspielen von meinem Interval "wenn" die Aussage wahr ist, wenn der Button gedrückt wird, wenn nicht "clearInterval"
+wenn es "wahr ist, soll das Beat abgespielt werden, wenn es (Z) kleiner als "beatLoop.lenght" ist (die Höchstlänge vom Beat) --> 
+z++ -> nach jedem Z soll euín weiteres Beat dazu kommen (z+1),
+Wenn mein "beatLoop.lenght" erreicht ist (else), soll z auf die nullte/ erste Stelle 0 gesetzt werden*/
+
 function playBeat(): void {
     
       
@@ -80,23 +88,30 @@ function playBeat(): void {
 }
 
 
-//Play und Pause Buttons
+//Play und Pause Buttons --> Aktivierung + "is-hidden"
+//myPlay und myPause definiert
+
 const myPlay: HTMLElement = document.getElementById("play");
 
 const myPause: HTMLElement = document.getElementById("pause");
 
+/*Play 
+--> "this"! + "PLayBeat"*/
 myPlay.addEventListener("click", function (): void {
 toogleClasses(this, myPause);
 beatPlay = true;
 playBeat();
 });
 
+//Pause
 myPause.addEventListener("click", function (): void {
 toogleClasses(this, myPlay);
 beatPlay = false;
 playBeat();
 });
 
+/*Funktion für den Austausch zwischen Play und Pause Button (is-hiiden) 
+--> toogleClasses*/
 function toogleClasses(firstHTMLElement: HTMLElement, secondHTMLElement: HTMLElement): void {
 firstHTMLElement.classList.add("is-hidden");
 secondHTMLElement.classList.remove("is-hidden"); 
@@ -106,6 +121,10 @@ secondHTMLElement.classList.remove("is-hidden"); 
 //Record Button
 const recordbtn: HTMLElement = document.getElementById("record");
 
+/* aktivieren und deaktivieren vom "Record Button" 
+-> nur beim click "active"!
+-> "recordbtn.classList" --> contains/ remove/ add!!*/
+
 recordbtn.addEventListener("click", function (): void {
     if (recordbtn.classList.contains("active")) {
         recordbtn.classList.remove("active");
@@ -114,10 +133,17 @@ recordbtn.addEventListener("click", function (): void {
     }
 });
 
+
+// Array für "beatLoop" --> speichern Beats 
 let beatLoop: number[] = [];
 
+/* Funktion für Beatrecord 
+-> es sollt aufnehmen beim click auf den record Button 
++ aufhören beim erneuten click
+-> Array soll geleert werden*/
+
 function beatrecord(pad: number): void {
-if (recordbtn.classList.contains("active")) {beatLoop.push(pad)}
+if (recordbtn.classList.contains("active")) {beatLoop.push(pad); }
 }
 
 //Delete Button
