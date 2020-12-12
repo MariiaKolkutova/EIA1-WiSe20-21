@@ -11,8 +11,8 @@ body{
 }
 .wrapper{
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 30%;
+    height: 30%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
