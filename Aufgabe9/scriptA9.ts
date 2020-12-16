@@ -1,30 +1,23 @@
 namespace L9{
+    
+const inputField: HTMLInputElement = (document.getElementById("inputField") as HTMLInputElement);
 
-    let test: number = 0;
+inputField.addEventListener("keypress", function (event: KeyboardEvent): void {
+if (event.key == "Enter") {
+    createNewToDo();
+}    
+});
 
-interface todo{
-      title: string;
-      done: boolean;
-    }
-
-let todos: todo[] = [
-{ 
-title: 'Geschenke',
-done: true, 
-},
-{
-title: 'Glühwein',
-done: true,
-},
-{
-title: 'mehr Alkohol kaufen',
-done: false,
+function createNewToDo(): void {
+    let myCheckbox: HTMLInputElement = document.createElement("input");
+    myCheckbox.type = "checkbox";
+    let myLabel: HTMLLabelElement = document.createElement("label");
+    myLabel.className = "myClass";
+    myLabel.innerHTML = inputField.value;
+    document.getElementById("toDoForm").appendChild(myCheckbox);
+    document.getElementById("toDoForm").appendChild(myLabel);
 }
-];
 
-for (let i: number = 0; i< todos.length; i++){
-    document.querySelector(".todoListe ul").innerHTML += "<li>" + todos[i].title + "[" + todos[i].done + "] </li>";
-}
 }
 
 
@@ -45,4 +38,3 @@ for (let i: number = 0; i< todos.length; i++){
 
 
 
-}
