@@ -16,7 +16,11 @@ function createNewToDo(): void {
     myLabel.innerHTML = inputField.value;
     document.getElementById("toDoForm").appendChild(myCheckbox);
     document.getElementById("toDoForm").appendChild(myLabel);
+    let deleteButton: HTMLInputElement = document.createElement("input");
+    deleteButton.className = "fas fa-trash";
 }
+
+
 
 }
 

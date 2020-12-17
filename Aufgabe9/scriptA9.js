@@ -14,6 +14,8 @@ var L9;
         myLabel.innerHTML = inputField.value;
         document.getElementById("toDoForm").appendChild(myCheckbox);
         document.getElementById("toDoForm").appendChild(myLabel);
+        var deleteButton = document.createElement("input");
+        deleteButton.className = "fas fa-trash";
     }
 })(L9 || (L9 = {}));
 //# sourceMappingURL=scriptA9.js.map
