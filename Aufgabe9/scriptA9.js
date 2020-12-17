@@ -12,12 +12,11 @@ var L9;
         var myLabel = document.createElement("label");
         myLabel.className = "myClass";
         myLabel.innerHTML = inputField.value;
-        /*let myTrash: HTMLElement = document.createElement("p");
+        var myTrash = document.createElement("p");
         myTrash.className = ("fas fa-trash");
-        myTrash.classList.add("fas fa-trash");*/
         document.getElementById("toDoForm").appendChild(myCheckbox);
         document.getElementById("toDoForm").appendChild(myLabel);
-        //document.getElementById("toDoForm").appendChild(myTrash);
+        document.getElementById("toDoForm").appendChild(myTrash);
     }
 })(L9 || (L9 = {}));
 //# sourceMappingURL=scriptA9.js.map

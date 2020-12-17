@@ -16,14 +16,14 @@ function createNewTask(): void {
     myLabel.className = "myClass";
     myLabel.innerHTML = inputField.value;
     
-    /*let myTrash: HTMLElement = document.createElement("p");
+    let myTrash: HTMLElement = document.createElement("p");
     myTrash.className = ("fas fa-trash");
-    myTrash.classList.add("fas fa-trash");*/
+
 
 
     document.getElementById("toDoForm").appendChild(myCheckbox);
     document.getElementById("toDoForm").appendChild(myLabel);
-    //document.getElementById("toDoForm").appendChild(myTrash);
+    document.getElementById("toDoForm").appendChild(myTrash);
 
 }
 
