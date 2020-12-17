@@ -4,20 +4,27 @@ const inputField: HTMLInputElement = (document.getElementById("inputField") as H
 
 inputField.addEventListener("keypress", function (event: KeyboardEvent): void {
 if (event.key == "Enter") {
-    createNewToDo();
+    createNewTask();
 }    
 });
 
-function createNewToDo(): void {
+function createNewTask(): void {
     let myCheckbox: HTMLInputElement = document.createElement("input");
     myCheckbox.type = "checkbox";
+
     let myLabel: HTMLLabelElement = document.createElement("label");
     myLabel.className = "myClass";
     myLabel.innerHTML = inputField.value;
+    
+    /*let myTrash: HTMLElement = document.createElement("p");
+    myTrash.className = ("fas fa-trash");
+    myTrash.classList.add("fas fa-trash");*/
+
+
     document.getElementById("toDoForm").appendChild(myCheckbox);
     document.getElementById("toDoForm").appendChild(myLabel);
-    let deleteButton: HTMLInputElement = document.createElement("input");
-    deleteButton.className = "fas fa-trash";
+    //document.getElementById("toDoForm").appendChild(myTrash);
+
 }
 
 
