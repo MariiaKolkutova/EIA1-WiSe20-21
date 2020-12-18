@@ -27,7 +27,7 @@ function createNewTask(): void {
     let myTrash: HTMLElement = document.createElement("i");
     myTrash.className = ("fas fa-trash");
 
-    //?
+    //MyDiv --> alle Elemente (box, label, trash)
     myTrash.addEventListener("click", function(): void {
     console.log("trash hehe");
     removeTask(myDiv);

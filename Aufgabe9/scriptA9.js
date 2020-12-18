@@ -23,7 +23,7 @@ var L9;
         //Trash
         var myTrash = document.createElement("i");
         myTrash.className = ("fas fa-trash");
-        //?
+        //MyDiv --> alle Elemente (box, label, trash)
         myTrash.addEventListener("click", function () {
             console.log("trash hehe");
             removeTask(myDiv);
