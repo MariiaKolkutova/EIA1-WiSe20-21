@@ -13,16 +13,22 @@ let changeCounter: number = 0;
 
 //Funktion für neue To Dos!
 function createNewTask(): void {
+
+    console.log(document.getElementById("toDoFrom"));
+
     //Div
     let myDiv: HTMLDivElement = document.createElement("div");
     myDiv.className = "myDiv"; 
+    
     //Checkbox
     let myCheckbox: HTMLInputElement = document.createElement("input");
     myCheckbox.type = "checkbox";
+    
     //Label
     let myLabel: HTMLLabelElement = document.createElement("label");
     myLabel.className = "myClass";
     myLabel.innerHTML = inputField.value;
+    
     //Trash
     let myTrash: HTMLElement = document.createElement("i");
     myTrash.className = ("fas fa-trash");
@@ -39,7 +45,7 @@ function createNewTask(): void {
     myDiv.appendChild(myLabel);
     myDiv.appendChild(myTrash);
     
-    console.log("hallo");
+  
     
 //Task +1 zählen, + open Tasks ausgeben 
 changeCounter++;

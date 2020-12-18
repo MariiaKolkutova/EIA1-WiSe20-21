@@ -10,6 +10,7 @@ var L9;
     var changeCounter = 0;
     //Funktion für neue To Dos!
     function createNewTask() {
+        console.log(document.getElementById("toDoFrom"));
         //Div
         var myDiv = document.createElement("div");
         myDiv.className = "myDiv";
@@ -33,7 +34,6 @@ var L9;
         myDiv.appendChild(myCheckbox);
         myDiv.appendChild(myLabel);
         myDiv.appendChild(myTrash);
-        console.log("hallo");
         //Task +1 zählen, + open Tasks ausgeben 
         changeCounter++;
         countTasks();
