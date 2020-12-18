@@ -1,23 +1,24 @@
 var L9;
 (function (L9) {
     var inputField = document.getElementById("inputField");
+    //Inputfield für die EingabeTaste "Enter" für jede neue Aufgabe
     inputField.addEventListener("keypress", function (event) {
         if (event.key == "Enter") {
             createNewTask();
             inputField.value = " ";
         }
     });
-    // var für den Counter 
+    // var für den Counter --> 0 als Ausgangspunkt
     var changeCounter = 0;
     //Funktion für neue To Dos!
     function createNewTask() {
-        console.log(document.getElementById("toDoFrom"));
-        //Div
+        //Div --> Elemente --> "wrapper"
         var myDiv = document.createElement("div");
         myDiv.className = "myDiv";
         //Checkbox
         var myCheckbox = document.createElement("input");
         myCheckbox.type = "checkbox";
+        myCheckbox.className = "checkboxField";
         //Label
         var myLabel = document.createElement("label");
         myLabel.className = "myClass";
@@ -31,18 +32,19 @@ var L9;
             removeTask(myDiv);
         });
         //getting Ellements --> "child" "appenden" an die Objekte 
+        //my.div zugriff, nicht merh HTML
         document.getElementById("toDoFrom").appendChild(myDiv);
         myDiv.appendChild(myCheckbox);
         myDiv.appendChild(myLabel);
         myDiv.appendChild(myTrash);
-        //Task +1 zählen, + open Tasks ausgeben 
+        //Task +1 zählen, hochzählen, + open Tasks ausgeben 
         changeCounter++;
         countTasks();
     }
     //Funktion für das Löschen der ToDos --> ".remove"
     function removeTask(wrapper) {
         wrapper.remove();
-        // Task -1 zählen, nachdem ein div gelöscht wird --> count Tasks angewendet
+        // Task -1 zählen, runterzählen, nachdem ein div gelöscht wird --> count Tasks angewendet
         changeCounter--;
         countTasks();
     }

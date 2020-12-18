@@ -1,0 +1,67 @@
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    margin-top: 60px;
+    font-family: Arial;
+    background-color: rgb(192, 192, 192);
+    background-image: url(./img/img9.jpg);
+    background-size: cover;
+}
+h1{
+    margin: 0%;
+    margin-bottom: 10px;
+    font-size: 50px;
+    position: relative;
+    right: 25px;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px #000000;
+}
+h2{
+    margin: 0%;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 30px;
+    left: 24px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px #000000;
+}
+.wrapper {
+    position: relative;
+}
+.myDiv {
+    position: relative;
+    right: 20px;
+    padding: 10px 10px 10px 10px;
+    background: rgb(138, 147, 163);
+    width: 250px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.myDiv:hover {
+    background: rgb(49, 49, 49);
+}
+.checkboxField{
+    position: absolute;
+}
+.myClass{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 50px;
+}
+.fas{
+    position: relative;
+    left: 230px;
+}
+#inputField{
+    position: relative;
+    right: 13px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 0.8rem;
+    width: 250px;
+    height: 27px;
+}
+
