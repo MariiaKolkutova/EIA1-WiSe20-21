@@ -33,7 +33,7 @@ var L9;
         myDiv.appendChild(myCheckbox);
         myDiv.appendChild(myLabel);
         myDiv.appendChild(myTrash);
-        console.log();
+        console.log("hallo");
         //Task +1 zählen, + open Tasks ausgeben 
         changeCounter++;
         countTasks();

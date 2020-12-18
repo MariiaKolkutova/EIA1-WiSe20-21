@@ -39,7 +39,7 @@ function createNewTask(): void {
     myDiv.appendChild(myLabel);
     myDiv.appendChild(myTrash);
     
-    console.log();
+    console.log("hallo");
     
 //Task +1 zählen, + open Tasks ausgeben 
 changeCounter++;
