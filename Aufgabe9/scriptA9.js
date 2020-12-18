@@ -7,6 +7,7 @@ var L9;
             inputField.value = " ";
         }
     });
+    //
     var changeCounter = 0;
     //Funktion für neue To Dos!
     function createNewTask() {
@@ -23,14 +24,14 @@ var L9;
         myLabel.innerHTML = inputField.value;
         //Trash
         var myTrash = document.createElement("i");
-        myTrash.className = ("fas fa-trash");
+        myTrash.className = "fas fa-trash";
         //MyDiv --> alle Elemente (box, label, trash)
         myTrash.addEventListener("click", function () {
-            console.log("trash hehe");
+            console.log("trash");
             removeTask(myDiv);
         });
         //getting Ellements --> "child" "appenden" an die Objekte 
-        document.getElementById("toDoFrom").appendChild(myDiv); //????
+        document.getElementById("toDoFrom").appendChild(myDiv);
         myDiv.appendChild(myCheckbox);
         myDiv.appendChild(myLabel);
         myDiv.appendChild(myTrash);
@@ -38,7 +39,7 @@ var L9;
         changeCounter++;
         countTasks();
     }
-    //Funktion für das Löschen der ToDOs --> ".remove"
+    //Funktion für das Löschen der ToDos --> ".remove"
     function removeTask(wrapper) {
         wrapper.remove();
         // Task -1 zählen, nachdem ein div gelöscht wird --> count Tasks angewendet
@@ -47,7 +48,7 @@ var L9;
     }
     //Tasks zählen
     function countTasks() {
-        document.getElementById("taskNumber").innerText = changeCounter + " open tasks";
+        document.getElementById("taskNumber").innerHTML = changeCounter + " open tasks";
     }
 })(L9 || (L9 = {}));
 //# sourceMappingURL=scriptA9.js.map
