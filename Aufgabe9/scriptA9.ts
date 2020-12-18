@@ -9,7 +9,7 @@ if (event.key == "Enter") {
 }    
 });
 
-//
+// var für den Counter 
 let changeCounter: number = 0;
 
 //Funktion für neue To Dos!
@@ -48,26 +48,24 @@ function createNewTask(): void {
     
   
     
-//Task +1 zählen, + open Tasks ausgeben 
-changeCounter++;
-countTasks();
-
+    //Task +1 zählen, + open Tasks ausgeben 
+    changeCounter++;
+    countTasks();
 }
 
 //Funktion für das Löschen der ToDos --> ".remove"
 function removeTask(wrapper: HTMLDivElement): void {
-wrapper.remove(); 
+    wrapper.remove(); 
 
-// Task -1 zählen, nachdem ein div gelöscht wird --> count Tasks angewendet
-changeCounter--;
-countTasks();
+    // Task -1 zählen, nachdem ein div gelöscht wird --> count Tasks angewendet
+    changeCounter--;
+    countTasks();
 }
 
 //Tasks zählen
 function countTasks(): void {
     document.getElementById("taskNumber").innerHTML = changeCounter + " open tasks";
 }
-
 
 }
 

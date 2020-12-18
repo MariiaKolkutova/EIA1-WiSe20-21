@@ -7,7 +7,7 @@ var L9;
             inputField.value = " ";
         }
     });
-    //
+    // var für den Counter 
     var changeCounter = 0;
     //Funktion für neue To Dos!
     function createNewTask() {
