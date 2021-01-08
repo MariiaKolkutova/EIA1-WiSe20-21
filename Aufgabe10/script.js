@@ -3,25 +3,22 @@ var L10;
     /*Variable (let) -> alle Objekte(Instanzen),
      die innerhakb des Arrays erstellt werden*/
     var allToDosObjects = [
-        //1. Objekt
+        //deklarierte Objekte:
+        {
+            todosText: ":)",
+            todosChecked: true,
+        },
         {
             todosText: "Lorem",
             todosChecked: true,
         },
-        //2....
         {
             todosText: "Ipsum",
             todosChecked: false,
         },
-        //3....
         {
             todosText: "Dolor",
             todosChecked: false,
-        },
-        //4....
-        {
-            todosText: ":)",
-            todosChecked: true,
         },
     ];
     /**
@@ -31,10 +28,14 @@ var L10;
      * Variablen deklariert, die später die entsprechenden DOM-Elemente
      * speichern.
      */
+    //Variablen
     var inputDOMElement;
     var addButtonDOMElement;
     var todosDOMElement;
     var counterDOMElement;
+    //Aufgabe11
+    var doneToDoDOMElement;
+    var openToDoDOMElement;
     /**
      * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
      * initialisiert werden
@@ -49,6 +50,9 @@ var L10;
         addButtonDOMElement = document.querySelector("#addButton");
         todosDOMElement = document.querySelector("#todos");
         counterDOMElement = document.querySelector("#counter");
+        //Aufgabe11
+        doneToDoDOMElement = document.querySelector("#doneToDo");
+        openToDoDOMElement = document.querySelector("#openToDo");
         /**
          * Jetzt da der DOM verfügbar ist kann auch ein Event-Listener
          * auf den AddToDo Button gesetzt werden.
@@ -101,10 +105,34 @@ var L10;
         for (var index = 0; index < allToDosObjects.length; index++) {
             _loop_1(index);
         }
-        updateCounter();
+        updateCounter(); //??
     }
+    //Counter
     function updateCounter() {
+        /*Aufgabe11
+        -> Variablen für "open" und "done" Zähler erstellen*/
+        var openNumber = 0;
+        var doneNumber = 0;
+        /*1. if/else Bedingung für die Bezeichnung done und undone der Objekten
+        2. der Zustand:
+        checked = done = false
+        unchecked = open = true
+        3. "if" der Zustand ist checked/ done ist es "false" und opneNumber Zhhler geht +1(++),
+        wenn es "false" ist dann tritt "else", openNumber Zähler ghet +1(++)
+        4. var index deklariert, index ist kleiner als "in total" tasks, geht +1 hoch*/
+        for (var index = 0; index < allToDosObjects.length; index++) {
+            if (allToDosObjects[index].todosChecked == false) {
+                openNumber++;
+            }
+            else {
+                doneNumber++;
+            }
+        }
+        //L10
         counterDOMElement.innerHTML = allToDosObjects.length + " in total";
+        //Aufgabe11 --> done und open
+        doneToDoDOMElement.innerHTML = doneNumber + " done";
+        openToDoDOMElement.innerHTML = openNumber + " open";
     }
     /**
      * Ein neues ToDo wird folgendermaßen erstellt:
@@ -118,7 +146,8 @@ var L10;
         if (inputDOMElement.value != "") {
             /*.unshift-> Adds one or more elements to the front of an array
             and returns the new length of the array*/
-            //
+            // checked= false vs unchecked= open!
+            //L10
             allToDosObjects.unshift({
                 todosText: inputDOMElement.value,
                 todosChecked: false

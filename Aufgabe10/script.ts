@@ -11,26 +11,23 @@ namespace L10 {
     /*Variable (let) -> alle Objekte(Instanzen),
      die innerhakb des Arrays erstellt werden*/
     let allToDosObjects: allToDos[] = [
-        //1. Objekt
-        {
-            todosText: "Lorem",
-            todosChecked: true,
-        },
-        //2....
-        {
-            todosText: "Ipsum",
-            todosChecked: false,
-        },
-        //3....
-        {
-            todosText: "Dolor",
-            todosChecked: false,
-        },
-        //4....
+        //deklarierte Objekte:
         {
             todosText: ":)",
             todosChecked: true,
         },
+        {
+            todosText: "Lorem",
+            todosChecked: true,
+        },
+        {
+            todosText: "Ipsum",
+            todosChecked: false,
+        },
+        {
+            todosText: "Dolor",
+            todosChecked: false,
+        }, 
     ];
     /**
      * Die Anwendung wird immer wieder auf die selben
@@ -39,10 +36,14 @@ namespace L10 {
      * Variablen deklariert, die später die entsprechenden DOM-Elemente
      * speichern.
      */
-    var inputDOMElement: HTMLInputElement;
-    var addButtonDOMElement: HTMLElement;
-    var todosDOMElement: HTMLElement;
-    var counterDOMElement: HTMLElement;
+    //Variablen
+    let inputDOMElement: HTMLInputElement;
+    let addButtonDOMElement: HTMLElement;
+    let todosDOMElement: HTMLElement;
+    let counterDOMElement: HTMLElement;
+    //Aufgabe11
+    let doneToDoDOMElement: HTMLElement;
+    let openToDoDOMElement: HTMLElement;
     /**
      * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
      * initialisiert werden
@@ -57,6 +58,10 @@ namespace L10 {
         addButtonDOMElement = document.querySelector("#addButton");
         todosDOMElement = document.querySelector("#todos");
         counterDOMElement = document.querySelector("#counter");
+        //Aufgabe11
+        doneToDoDOMElement = document.querySelector("#doneToDo");
+        openToDoDOMElement = document.querySelector("#openToDo")
+
         /**
          * Jetzt da der DOM verfügbar ist kann auch ein Event-Listener
          * auf den AddToDo Button gesetzt werden.
@@ -106,10 +111,34 @@ namespace L10 {
             // Bis hier hin wurde das neue Todo "zusammengebaut", jetzt wird es in den DOM gerendert.
             todosDOMElement.appendChild(todo);
         }
-        updateCounter();
+        updateCounter();//??
     }
+    //Counter
     function updateCounter(): void {
+        /*Aufgabe11 
+        -> Variablen für "open" und "done" Zähler erstellen*/
+        let openNumber: number = 0;
+        let doneNumber: number = 0;
+        /*1. if/else Bedingung für die Bezeichnung done und undone der Objekten
+        2. der Zustand: 
+        checked = done = false
+        unchecked = open = true
+        3. "if" der Zustand ist checked/ done ist es "false" und opneNumber Zhhler geht +1(++),
+        wenn es "false" ist dann tritt "else", openNumber Zähler ghet +1(++)
+        4. var index deklariert, index ist kleiner als "in total" tasks, geht +1 hoch*/
+        for (let index = 0; index < allToDosObjects.length; index++) 
+        {   if (allToDosObjects[index].todosChecked == false) {
+                openNumber++;
+            }
+            else {
+                doneNumber++;
+            }
+        }
+        //L10
         counterDOMElement.innerHTML = allToDosObjects.length + " in total";
+        //Aufgabe11 --> done und open
+        doneToDoDOMElement.innerHTML = doneNumber + " done";
+        openToDoDOMElement.innerHTML = openNumber + " open";
     }
     /**
      * Ein neues ToDo wird folgendermaßen erstellt:
@@ -123,11 +152,12 @@ namespace L10 {
         if (inputDOMElement.value != "") {
             /*.unshift-> Adds one or more elements to the front of an array 
             and returns the new length of the array*/
-            //
-            allToDosObjects.unshift({
+            // checked= false vs unchecked= open!
+            //L10
+                allToDosObjects.unshift({
                 todosText: inputDOMElement.value,
                 todosChecked: false
-            });
+                });
             /**
              * Der Eingabe-Wert aus dem Input-Feld (.value) wird 
              * als neues Element in das ToDo-Array gepusht.
