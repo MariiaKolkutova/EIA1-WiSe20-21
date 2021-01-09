@@ -9,15 +9,15 @@ var L10;
             todosChecked: true,
         },
         {
-            todosText: "Lorem",
+            todosText: "nichts machen",
             todosChecked: true,
         },
         {
-            todosText: "Ipsum",
+            todosText: "nichts unternehmen",
             todosChecked: false,
         },
         {
-            todosText: "Dolor",
+            todosText: "untätig bleiben",
             todosChecked: false,
         },
     ];
@@ -110,7 +110,8 @@ var L10;
     //Counter
     function updateCounter() {
         /*Aufgabe11
-        -> Variablen für "open" und "done" Zähler erstellen*/
+        -> Variablen für "open" und "done" Zähler erstellen
+        -> lokal innerhalb der Funktion*/
         var openNumber = 0;
         var doneNumber = 0;
         /*1. if/else Bedingung für die Bezeichnung done und undone der Objekten
@@ -119,7 +120,9 @@ var L10;
         unchecked = open = true
         3. "if" der Zustand ist checked/ done ist es "false" und opneNumber Zhhler geht +1(++),
         wenn es "false" ist dann tritt "else", openNumber Zähler ghet +1(++)
-        4. var index deklariert, index ist kleiner als "in total" tasks, geht +1 hoch*/
+        4. var index deklariert, index ist kleiner als "in total" tasks, geht +1 hoch
+        5. wenn done number hochgeht, dann geht open number runter,
+        (umgekehrt) wenn open number hoch geht, geht done number runter*/
         for (var index = 0; index < allToDosObjects.length; index++) {
             if (allToDosObjects[index].todosChecked == false) {
                 openNumber++;
