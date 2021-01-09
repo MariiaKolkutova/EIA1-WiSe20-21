@@ -6,7 +6,7 @@ namespace L10 {
     -> direkter Zugriff auf "Objekte"*/
     interface allToDos {
         todosText: string;
-        todosChecked: boolean;
+        todosChecked: boolean; // true vs false
     }
     /*Variable (let) -> alle Objekte(Instanzen),
      die innerhakb des Arrays erstellt werden*/
@@ -14,7 +14,7 @@ namespace L10 {
         //deklarierte Objekte:
         {
             todosText: ":)",
-            todosChecked: true,
+            todosChecked: true, //true = checked
         },
         {
             todosText: "nichts machen",
@@ -22,7 +22,7 @@ namespace L10 {
         },
         {
             todosText: "nichts unternehmen",
-            todosChecked: false,
+            todosChecked: false, // false = not checked
         },
         {
             todosText: "untätig bleiben",
@@ -41,7 +41,7 @@ namespace L10 {
     let addButtonDOMElement: HTMLElement;
     let todosDOMElement: HTMLElement;
     let counterDOMElement: HTMLElement;
-    //Aufgabe11
+    //L11
     let doneToDoDOMElement: HTMLElement;
     let openToDoDOMElement: HTMLElement;
     /**
@@ -58,10 +58,10 @@ namespace L10 {
         addButtonDOMElement = document.querySelector("#addButton");
         todosDOMElement = document.querySelector("#todos");
         counterDOMElement = document.querySelector("#counter");
-        //Aufgabe11
+        //L1
+        //neue DOM Elemente für done/open
         doneToDoDOMElement = document.querySelector("#doneToDo");
         openToDoDOMElement = document.querySelector("#openToDo")
-
         /**
          * Jetzt da der DOM verfügbar ist kann auch ein Event-Listener
          * auf den AddToDo Button gesetzt werden.
@@ -115,11 +115,12 @@ namespace L10 {
     }
     //Counter
     function updateCounter(): void {
-        /*Aufgabe11 
+        /*L11 
         -> Variablen für "open" und "done" Zähler erstellen
         -> lokal innerhalb der Funktion*/
         let openNumber: number = 0;
         let doneNumber: number = 0;
+
         /*1. if/else Bedingung für die Bezeichnung done und undone der Objekten
         2. der Zustand: 
         checked = done = false
@@ -139,7 +140,7 @@ namespace L10 {
         }
         //L10
         counterDOMElement.innerHTML = allToDosObjects.length + " in total";
-        //Aufgabe11 --> done und open
+        //L11 --> Zugriff aud done und open Elemente
         doneToDoDOMElement.innerHTML = doneNumber + " done";
         openToDoDOMElement.innerHTML = openNumber + " open";
     }
@@ -210,6 +211,7 @@ namespace L10 {
          * bekannt, an der das ToDo steht.
          * Jetzt muss diese Stelle beider Arrays gelöscht werden,
          * das ToDo-Text-Array und das Checked/Unchecked-Array
+         --> 2 mit 1 ersetzt!
          */
         allToDosObjects.splice(index, 1);
         /**

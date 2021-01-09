@@ -33,7 +33,7 @@ var L10;
     var addButtonDOMElement;
     var todosDOMElement;
     var counterDOMElement;
-    //Aufgabe11
+    //L11
     var doneToDoDOMElement;
     var openToDoDOMElement;
     /**
@@ -50,7 +50,8 @@ var L10;
         addButtonDOMElement = document.querySelector("#addButton");
         todosDOMElement = document.querySelector("#todos");
         counterDOMElement = document.querySelector("#counter");
-        //Aufgabe11
+        //L1
+        //neue DOM Elemente für done/open
         doneToDoDOMElement = document.querySelector("#doneToDo");
         openToDoDOMElement = document.querySelector("#openToDo");
         /**
@@ -109,7 +110,7 @@ var L10;
     }
     //Counter
     function updateCounter() {
-        /*Aufgabe11
+        /*L11
         -> Variablen für "open" und "done" Zähler erstellen
         -> lokal innerhalb der Funktion*/
         var openNumber = 0;
@@ -133,7 +134,7 @@ var L10;
         }
         //L10
         counterDOMElement.innerHTML = allToDosObjects.length + " in total";
-        //Aufgabe11 --> done und open
+        //L11 --> Zugriff aud done und open Elemente
         doneToDoDOMElement.innerHTML = doneNumber + " done";
         openToDoDOMElement.innerHTML = openNumber + " open";
     }
@@ -204,6 +205,7 @@ var L10;
          * bekannt, an der das ToDo steht.
          * Jetzt muss diese Stelle beider Arrays gelöscht werden,
          * das ToDo-Text-Array und das Checked/Unchecked-Array
+         --> 2 mit 1 ersetzt!
          */
         allToDosObjects.splice(index, 1);
         /**
