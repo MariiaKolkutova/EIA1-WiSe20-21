@@ -8,10 +8,12 @@ namespace L10 {
         todosText: string;
         todosChecked: boolean; // true vs false
     }
-    /*Variable (let) -> alle Objekte(Instanzen),
-     die innerhakb des Arrays erstellt werden*/
+    /*Variable (let) für -> alle Objekte(Instanzen),
+     die innerhalb des Arrays erstellt werden,
+     werden hier hinzugefügt
+     --> es bezieht sich auf das Interface!*/
     let allToDosObjects: allToDos[] = [
-        //deklarierte Objekte:
+        //bereits deklarierte Objekte:
         {
             todosText: ":)",
             todosChecked: true, //true = checked
@@ -58,7 +60,7 @@ namespace L10 {
         addButtonDOMElement = document.querySelector("#addButton");
         todosDOMElement = document.querySelector("#todos");
         counterDOMElement = document.querySelector("#counter");
-        //L1
+        //L11
         //neue DOM Elemente für done/open
         doneToDoDOMElement = document.querySelector("#doneToDo");
         openToDoDOMElement = document.querySelector("#openToDo")
@@ -117,10 +119,10 @@ namespace L10 {
     function updateCounter(): void {
         /*L11 
         -> Variablen für "open" und "done" Zähler erstellen
-        -> lokal innerhalb der Funktion*/
+        -> lokal innerhalb der Funktion
+        -> 0 */
         let openNumber: number = 0;
         let doneNumber: number = 0;
-
         /*1. if/else Bedingung für die Bezeichnung done und undone der Objekten
         2. der Zustand: 
         checked = done = false
@@ -211,7 +213,7 @@ namespace L10 {
          * bekannt, an der das ToDo steht.
          * Jetzt muss diese Stelle beider Arrays gelöscht werden,
          * das ToDo-Text-Array und das Checked/Unchecked-Array
-         --> 2 mit 1 ersetzt!
+         ->L10 --> 2 mit 1 ersetzt!
          */
         allToDosObjects.splice(index, 1);
         /**
