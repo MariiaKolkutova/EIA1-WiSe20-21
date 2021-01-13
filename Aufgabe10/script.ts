@@ -47,12 +47,13 @@ namespace L10 {
     let doneToDoDOMElement: HTMLElement;
     let openToDoDOMElement: HTMLElement;
     
-    //Artyom
+    //Artyom -Sprachassistent-
     declare var Artyom: any;
 
     window.addEventListener("load", function (): void {
         const artyom: any = new Artyom();
-
+        
+        //Fuktion oben, weil die erst deklariert werden muss
         function startContinuousArtyom(): void {
             artyom.fatality();
 
@@ -75,19 +76,27 @@ namespace L10 {
             indexes: ["erstelle Aufgabe *"],
             smart: true,
             action: function (i: any, wildcard: string): void {
+                /*wildcard = neue Objekte,
+                 die sprachlich eingegeben werden*/
+                /*ansprechen der Var allToDOsObjects,
+                 damit neue Objekte dort deklariert
+                und am Anfang (unshift) hinzugefügt werden
+                ++ es wird nicht als checked markiert*/
                 allToDosObjects.unshift({
                     todosText: wildcard,
                     todosChecked: false
                 });
                 drawListToDOM();
                 console.log("Neue Aufgabe wird erstellt: " + wildcard);
+                //artyom.say == sprachliche Ausgabe des Textes vom Sprachassistenten
                 artyom.say("deine Aufgabe" + wildcard + " wurde ergänzt");
             }
         });
-        //
-
-        //Button für Aktivierung von Artyom
+        //Button für die Aktivierung der Sprachaufnahme von Artyom
+        //id wird hier deklariert
         document.getElementById("VoiceCommands").addEventListener("click", function (): void {
+            /*Sprachausgabe wenn Artyom aktiviert wird,
+            nachdem auf dem Button gedrückt wird*/
             artyom.say("Sprachbefehl aktiviert");
             startContinuousArtyom();
         });
