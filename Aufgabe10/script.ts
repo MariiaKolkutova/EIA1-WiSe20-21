@@ -29,7 +29,7 @@ namespace L10 {
         {
             todosText: "untätig bleiben",
             todosChecked: false,
-        }, 
+        },
     ];
     /**
      * Die Anwendung wird immer wieder auf die selben
@@ -46,6 +46,52 @@ namespace L10 {
     //L11
     let doneToDoDOMElement: HTMLElement;
     let openToDoDOMElement: HTMLElement;
+    
+    //Artyom
+    declare var Artyom: any;
+
+    window.addEventListener("load", function (): void {
+        const artyom: any = new Artyom();
+
+        function startContinuousArtyom(): void {
+            artyom.fatality();
+
+            setTimeout(
+                function (): void {
+                    artyom.initialize({
+                        lang: "de-DE",
+                        continuous: true,
+                        listen: true,
+                        interimResults: true,
+                        debug: true
+                    }).then(function (): void {
+                        console.log("Ready!");
+                    });
+                },
+                250);
+        };
+        startContinuousArtyom();
+        artyom.addCommands({
+            indexes: ["erstelle Aufgabe *"],
+            smart: true,
+            action: function (i: any, wildcard: string): void {
+                allToDosObjects.unshift({
+                    todosText: wildcard,
+                    todosChecked: false
+                });
+                drawListToDOM();
+                console.log("Neue Aufgabe wird erstellt: " + wildcard);
+                artyom.say("deine Aufgabe" + wildcard + " wurde ergänzt");
+            }
+        });
+        //
+
+        //Button für Aktivierung von Artyom
+        document.getElementById("VoiceCommands").addEventListener("click", function (): void {
+            artyom.say("Sprachbefehl aktiviert");
+            startContinuousArtyom();
+        });
+    });
     /**
      * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
      * initialisiert werden
@@ -132,8 +178,8 @@ namespace L10 {
         4. var index deklariert, index ist kleiner als "in total" tasks, geht +1 hoch
         5. wenn done number hochgeht, dann geht open number runter,
         (umgekehrt) wenn open number hoch geht, geht done number runter*/
-        for (let index = 0; index < allToDosObjects.length; index++) 
-        {   if (allToDosObjects[index].todosChecked == false) {
+        for (let index = 0; index < allToDosObjects.length; index++) {
+            if (allToDosObjects[index].todosChecked == false) {
                 openNumber++;
             }
             else {
@@ -160,10 +206,10 @@ namespace L10 {
             and returns the new length of the array*/
             // checked= false vs unchecked= open!
             //L10
-                allToDosObjects.unshift({
+            allToDosObjects.unshift({
                 todosText: inputDOMElement.value,
                 todosChecked: false
-                });
+            });
             /**
              * Der Eingabe-Wert aus dem Input-Feld (.value) wird 
              * als neues Element in das ToDo-Array gepusht.

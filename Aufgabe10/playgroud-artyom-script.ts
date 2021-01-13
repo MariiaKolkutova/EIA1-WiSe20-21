@@ -1,4 +1,4 @@
-declare var Artyom: any;
+declare let Artyom: any;
 
 window.addEventListener("load", function(): void {
     const artyom: any = new Artyom();

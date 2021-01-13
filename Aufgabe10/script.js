@@ -38,6 +38,44 @@ var L10;
     //L11
     var doneToDoDOMElement;
     var openToDoDOMElement;
+    window.addEventListener("load", function () {
+        var artyom = new Artyom();
+        function startContinuousArtyom() {
+            artyom.fatality();
+            setTimeout(function () {
+                artyom.initialize({
+                    lang: "de-DE",
+                    continuous: true,
+                    listen: true,
+                    interimResults: true,
+                    debug: true
+                }).then(function () {
+                    console.log("Ready!");
+                });
+            }, 250);
+        }
+        ;
+        startContinuousArtyom();
+        artyom.addCommands({
+            indexes: ["erstelle Aufgabe *"],
+            smart: true,
+            action: function (i, wildcard) {
+                allToDosObjects.unshift({
+                    todosText: wildcard,
+                    todosChecked: false
+                });
+                drawListToDOM();
+                console.log("Neue Aufgabe wird erstellt: " + wildcard);
+                artyom.say("deine Aufgabe" + wildcard + " wurde ergänzt");
+            }
+        });
+        //
+        //Button für Aktivierung von Artyom
+        document.getElementById("VoiceCommands").addEventListener("click", function () {
+            artyom.say("Sprachbefehl aktiviert");
+            startContinuousArtyom();
+        });
+    });
     /**
      * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
      * initialisiert werden

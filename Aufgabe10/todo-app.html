@@ -8,12 +8,23 @@
     <title>ToDo App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
+    <script src="./artyom.window.min.js" defer></script>
 </head>
 
 <body>
     <main>
         <h1>ToDo App</h1>
+        <p>
+        <button id="VoiceCommands">-activate voice commands-</button>  
+        </p>
+        <p>
+            1.drücke auf den Button "activate voice commands"
+            <br>
+            2.sag "erstelle Aufgabe"
+            <br>
+            3.nenne deine Aufgabe  
+        </p>   
         <p id="counter"> in total</p>
         <p id="openToDo"> open</p>
         <p id="doneToDo"> done</p>
@@ -22,8 +33,9 @@
             <input type="text" id="inputTodo" placeholder="Add another task">
             <button id="addButton"><i class="fas fa-plus-circle"></i></button>
         </div>
-        
+
         <div id="todos"></div>
+
     </main>
 </body>
 
