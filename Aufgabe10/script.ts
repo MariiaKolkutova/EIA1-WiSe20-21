@@ -49,6 +49,7 @@ namespace L10 {
     
     //Artyom -Sprachassistent-
     //warum Artyon an dieser Stelle????
+    //Ohne zu stopepn
     declare var Artyom: any;
 
     window.addEventListener("load", function (): void {
