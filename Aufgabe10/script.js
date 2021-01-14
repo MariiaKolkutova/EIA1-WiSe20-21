@@ -78,7 +78,7 @@ var L10;
             }
         });
         //Button für die Aktivierung der Sprachaufnahme von Artyom
-        //id wird hier deklariert
+        //id wird hier deklariert --> funktion durch "click" ausgelöst
         document.getElementById("VoiceCommands").addEventListener("click", function () {
             /*Sprachausgabe wenn Artyom aktiviert wird,
             nachdem auf dem Button gedrückt wird*/
@@ -115,6 +115,7 @@ var L10;
          */
         drawListToDOM();
     });
+    //drawListToDOM Funktion?????
     function drawListToDOM() {
         // alle todos erst einmal aus dem DOM löschen
         todosDOMElement.innerHTML = "";

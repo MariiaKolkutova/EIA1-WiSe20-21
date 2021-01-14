@@ -94,7 +94,7 @@ namespace L10 {
             }
         });
         //Button für die Aktivierung der Sprachaufnahme von Artyom
-        //id wird hier deklariert
+        //id wird hier deklariert --> funktion durch "click" ausgelöst
         document.getElementById("VoiceCommands").addEventListener("click", function (): void {
             /*Sprachausgabe wenn Artyom aktiviert wird,
             nachdem auf dem Button gedrückt wird*/
@@ -102,7 +102,7 @@ namespace L10 {
             startContinuousArtyom();
         });
     });
-    
+
     /**
      * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
      * initialisiert werden
@@ -132,6 +132,7 @@ namespace L10 {
          */
         drawListToDOM();
     });
+    //drawListToDOM Funktion?????
     function drawListToDOM(): void {
         // alle todos erst einmal aus dem DOM löschen
         todosDOMElement.innerHTML = "";
