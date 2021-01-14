@@ -48,6 +48,7 @@ namespace L10 {
     let openToDoDOMElement: HTMLElement;
     
     //Artyom -Sprachassistent-
+    //warum Artyon an dieser Stelle????
     declare var Artyom: any;
 
     window.addEventListener("load", function (): void {
@@ -101,6 +102,7 @@ namespace L10 {
             startContinuousArtyom();
         });
     });
+    
     /**
      * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
      * initialisiert werden
