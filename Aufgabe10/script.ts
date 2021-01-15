@@ -16,20 +16,20 @@ namespace L10 {
         //bereits deklarierte Objekte:
         {
             todosText: ":)",
-            todosChecked: true, //true = checked
+            todosChecked: true //true = checked
         },
         {
             todosText: "nichts machen",
-            todosChecked: true,
+            todosChecked: true
         },
         {
             todosText: "nichts unternehmen",
-            todosChecked: false, // false = not checked
+            todosChecked: false // false = not checked
         },
         {
             todosText: "untätig bleiben",
-            todosChecked: false,
-        },
+            todosChecked: false
+        }
     ];
     /**
      * Die Anwendung wird immer wieder auf die selben
@@ -72,7 +72,7 @@ namespace L10 {
                     });
                 },
                 250);
-        };
+        }
         startContinuousArtyom();
         artyom.addCommands({
             indexes: ["erstelle Aufgabe *"],
@@ -103,7 +103,6 @@ namespace L10 {
             startContinuousArtyom();
         });
     });
-
     /**
      * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
      * initialisiert werden
@@ -121,7 +120,7 @@ namespace L10 {
         //L11
         //neue DOM Elemente für done/open
         doneToDoDOMElement = document.querySelector("#doneToDo");
-        openToDoDOMElement = document.querySelector("#openToDo")
+        openToDoDOMElement = document.querySelector("#openToDo");
         /**
          * Jetzt da der DOM verfügbar ist kann auch ein Event-Listener
          * auf den AddToDo Button gesetzt werden.
@@ -172,7 +171,7 @@ namespace L10 {
             // Bis hier hin wurde das neue Todo "zusammengebaut", jetzt wird es in den DOM gerendert.
             todosDOMElement.appendChild(todo);
         }
-        updateCounter();//??
+        updateCounter();
     }
     //Counter
     function updateCounter(): void {
@@ -191,7 +190,7 @@ namespace L10 {
         4. var index deklariert, index ist kleiner als "in total" tasks, geht +1 hoch
         5. wenn done number hochgeht, dann geht open number runter,
         (umgekehrt) wenn open number hoch geht, geht done number runter*/
-        for (let index = 0; index < allToDosObjects.length; index++) {
+        for (let index: number = 0; index < allToDosObjects.length; index++) {
             if (allToDosObjects[index].todosChecked == false) {
                 openNumber++;
             }
