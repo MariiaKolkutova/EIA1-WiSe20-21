@@ -48,14 +48,13 @@ namespace L10 {
     let openToDoDOMElement: HTMLElement;
     
     //Artyom -Sprachassistent-
-    //warum Artyon an dieser Stelle????
-    //Ohne zu stopepn
+    //Ohne zu stopepn/ continuous
     declare var Artyom: any;
 
     window.addEventListener("load", function (): void {
         const artyom: any = new Artyom();
         
-        //Fuktion oben, weil die erst deklariert werden muss
+        //Fuktion
         function startContinuousArtyom(): void {
             artyom.fatality();
 
@@ -89,9 +88,9 @@ namespace L10 {
                     todosChecked: false
                 });
                 drawListToDOM();
-                console.log("Neue Aufgabe wird erstellt: " + wildcard);
                 //artyom.say == sprachliche Ausgabe des Textes vom Sprachassistenten
                 artyom.say("deine Aufgabe" + wildcard + " wurde ergänzt");
+                console.log("Neue Aufgabe wird erstellt: " + wildcard);
             }
         });
         //Button für die Aktivierung der Sprachaufnahme von Artyom
@@ -101,8 +100,10 @@ namespace L10 {
             nachdem auf dem Button gedrückt wird*/
             artyom.say("Sprachbefehl aktiviert");
             startContinuousArtyom();
+            console.log("Sprachassistent ist aktiviert");
         });
     });
+
     /**
      * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
      * initialisiert werden

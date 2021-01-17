@@ -8,20 +8,20 @@ var L10;
         //bereits deklarierte Objekte:
         {
             todosText: ":)",
-            todosChecked: true,
+            todosChecked: true //true = checked
         },
         {
             todosText: "nichts machen",
-            todosChecked: true,
+            todosChecked: true
         },
         {
             todosText: "nichts unternehmen",
-            todosChecked: false,
+            todosChecked: false // false = not checked
         },
         {
             todosText: "untätig bleiben",
-            todosChecked: false,
-        },
+            todosChecked: false
+        }
     ];
     /**
      * Die Anwendung wird immer wieder auf die selben
@@ -55,7 +55,6 @@ var L10;
                 });
             }, 250);
         }
-        ;
         startContinuousArtyom();
         artyom.addCommands({
             indexes: ["erstelle Aufgabe *"],
@@ -157,7 +156,7 @@ var L10;
         for (var index = 0; index < allToDosObjects.length; index++) {
             _loop_1(index);
         }
-        updateCounter(); //??
+        updateCounter();
     }
     //Counter
     function updateCounter() {

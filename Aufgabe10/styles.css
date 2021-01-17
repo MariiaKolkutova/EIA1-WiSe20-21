@@ -85,3 +85,9 @@ main {
 .trash:hover {
     color: black;
 }
+#VoiceCommands{
+    border-radius: 12px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(150, 0, 0);
+}
